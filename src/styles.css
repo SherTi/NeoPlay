@@ -1,0 +1,52 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background: #0D0E10;
+
+}
+html{
+  font-family: sans-serif, "SFNS Display";
+}
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+input{
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  cursor: text;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+button{
+  all: unset;
+  cursor: pointer;
+}
+img{
+  margin: 0;
+  padding: 0;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+.container  {
+  padding: 0 calc((100% - 1300px) / 2);
+}
+
+body::-webkit-scrollbar{
+  width: 3px;
+  background: transparent;
+}
+body::-webkit-scrollbar-thumb{
+  background: #77BC41;
+  border-radius: 6px;
+}
