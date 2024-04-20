@@ -4,10 +4,16 @@
       <div class="header-primary" [ngClass]="{'header-with-bg': lastScroll > 150 || showBlock, 'rounded-header': showBlock}">
         <div class="header">
           <div class="h-logo">
-            <div class="butter-icon">
-
+            <div class="round-block">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="round-icon">
+                <path d="M20 6L4 6" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M20 12L4 12" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M20 18H4" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
             </div>
-            <h1 class="h-logo">NeoPLay</h1>
+            <a href="/" class="h-logo-item">
+              <img src="/assets/logo.png" alt="" class="h-logo-item">
+            </a>
           </div>
           <div class="h-nav">
             <ul class="nav-main">
@@ -19,10 +25,41 @@
             </ul>
           </div>
           <div class="h-profile">
-            <div class="round-block"></div>
-            <div class="round-block"></div>
-            <div class="round-block"></div>
-            <div class="round-block"></div>
+            <div class="round-block">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="11" cy="11" r="8" stroke="#D3D3D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16.5 16.958L21.5 21.958" stroke="#D3D3D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="round-block">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 7C5 4.79086 6.79086 3 9 3H15C17.2091 3 19 4.79086 19 7V20.1683C19 20.9595 18.1248 21.4373 17.4592 21.0095L13.0815 18.1953C12.4227 17.7717 11.5773 17.7717 10.9185 18.1953L6.54076 21.0095C5.87525 21.4373 5 20.9595 5 20.1683V7Z" stroke="#D3D3D4" stroke-width="1.5"/>
+                <path d="M9 8.5H15" stroke="#D3D3D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="round-block lang-switch-block">
+              <div class="lang-switch">
+                <div class="flag-block">
+                  <img src="/assets/flag.png" alt="" class="flag-item">
+                </div>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_336_16298)">
+                    <path d="M6 9L12 15L18 9" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_336_16298">
+                      <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+            <div class="round-block profile-block">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="4" cy="4" r="4" transform="matrix(-1 0 0 1 16 3)" stroke="#FFF0F1" stroke-width="1.5"/>
+                <path d="M5 16.9347C5 16.0743 5.54085 15.3068 6.35109 15.0175V15.0175C10.004 13.7128 13.996 13.7128 17.6489 15.0175V15.0175C18.4591 15.3068 19 16.0743 19 16.9347V18.2502C19 19.4376 17.9483 20.3498 16.7728 20.1818L15.8184 20.0455C13.2856 19.6837 10.7144 19.6837 8.18162 20.0455L7.22721 20.1818C6.0517 20.3498 5 19.4376 5 18.2502V16.9347Z" stroke="#FFF0F1" stroke-width="1.5"/>
+              </svg>
+            </div>
           </div>
         </div>
       </div>
@@ -33,7 +70,24 @@
 <footer>
   <div class="container">
     <div class="footer-main">
-      <div class="ads-block"></div>
+      <div class="ads-block">
+        <span class="ads-title">
+          Qurilmangiz uchun dasturimizni yuklab oling:
+        </span>
+        <div class="ads-platforms">
+          <div class="ads-platforms-1">
+             <div class="ads-p">
+               <img src="/assets/playMarket.png" alt="" class="ads-p-icon">
+             </div>
+             <div class="ads-p">
+               <img src="/assets/appleStore.png" alt="" class="ads-p-icon">
+             </div>
+          </div>
+          <div class="ads-platforms-2">
+            <img src="/assets/OnTv.png" alt="" class="ads-p-icon">
+          </div>
+        </div>
+      </div>
       <div class="f-block">
         <ul class="f-link-main">
           <li class="f-link-title">Bo’limlar</li>
