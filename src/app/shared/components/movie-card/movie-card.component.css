@@ -1,0 +1,56 @@
+.movie-img-main:hover.movie-des{
+  top: -100%;
+  transition: all .3s;
+}
+.movie-card{
+  width: 220px;
+  cursor: pointer;
+}
+.movie-img-main{
+  position: relative;
+  border: 1px solid #25272A8C;
+  border-radius: 20px;
+}
+.movie-img-item{
+  object-fit: cover;
+  width: 220px;
+  height: 100%;
+  border-radius: 20px;
+}
+.movie-des{
+  position: absolute;
+  top: 12px;
+  left: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.movie-rate{
+  border-radius: 12px;
+  height: 28px;
+  padding: 4px 6px;
+  gap: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.movie-rate-text{
+  font-size: 12px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.imdb{
+  background: #EDBC0C;
+}
+.filmSearch{
+  background: #FF5500;
+}
+.neoPlay{
+  background: #77BC41;
+}
+.movie-text{
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}

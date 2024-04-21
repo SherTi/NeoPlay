@@ -29,7 +29,7 @@
 }
 .banner-img{
   width: 100%;
-  height: 100%;
+  height: 700px;
   object-fit: cover;
 }
 .banner-des{
@@ -137,4 +137,12 @@
   width: 28px;
   height: 28px;
   fill: #ffffff;
+}
+.img{
+  margin-bottom: 70px;
+}
+.reklama-img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }

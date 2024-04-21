@@ -1,0 +1,24 @@
+.title-text{
+  font-size: 28px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.nav-i-left{
+  border-radius: 16px;
+  padding: 12px;
+  background: #3A3C4080;
+  cursor: pointer;
+}
+.nav-icon{
+  display: flex;
+  gap: 6px;
+}
+.swiper{
+  margin-bottom: 70px;
+}
