@@ -3,13 +3,28 @@
   height: 214px;
   cursor: pointer;
 }
+.movie-h-card:hover .movie-hover{
+  transform-origin:bottom center;
+  transform: scale(1.1);
+  transition: all .3s;
+}
+.movie-h-card:hover .movie-hover::after{
+  opacity: 1;
+  z-index: 2;
+  position: relative;
+}
+.movie-hover{
+  transition: all .3s;
+}
 .movie-img{
+  position: relative;
   width: 329px;
   height: 184px;
   object-fit: cover;
   border-radius: 16px;
   position: relative;
   border: 1px solid #25272A8C;
+  transition: all .3s;
 }
 .movie-rate{
   border-radius: 12px;
