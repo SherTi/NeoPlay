@@ -11,6 +11,7 @@ import Swiper from "swiper";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { MovieCardComponent } from './shared/components/movie-card/movie-card.component';
 import { SliderComponent } from './shared/components/slider/slider.component';
+import { MoviePageComponent } from './pages/movie-page/movie-page.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { SliderComponent } from './shared/components/slider/slider.component';
     MovieHSliderComponent,
     MovieCardComponent,
     SliderComponent,
+    MoviePageComponent,
   ],
   imports: [
     BrowserModule,
