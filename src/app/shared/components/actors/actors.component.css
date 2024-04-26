@@ -1,0 +1,40 @@
+.actors{
+  margin-bottom: 70px;
+}
+.actors-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.actor-title{
+  font-size:28px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+.actor-block{
+  display: flex;
+  flex-direction: column;
+  width: 146px;
+}
+.actor-img-item{
+  width: 146px;
+  height: 146px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+  background:#191B1F;
+}
+.actor-name{
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+}
+.flex{
+  display: flex;
+  flex-direction: column;
+}
+.director-producer{
+  display: flex;
+  gap: 70px;
+}

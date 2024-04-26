@@ -1,0 +1,68 @@
+<div class="container">
+  <h1 class="rate-title">Fikrlar va baholar</h1>
+  <div class="rate-container">
+    <div class="comment">
+      <div class="comment-card">
+        <div class="rate-star">
+          <img src="/assets/stars.png" alt="">
+        </div>
+        <p class="comment-text">
+          Film ssenariysi o’zgacha edi. Aktyorlar mahorat bilan rollarga hissiyot bilan yondalashishgan,
+          qisqa qilganda detektiv janridagi yaxshi filmlardan!
+        </p>
+        <p class="comment-name">Saidalixon Sobirov</p>
+      </div>
+      <div class="comment-card">
+        <div class="rate-star">
+          <img src="/assets/stars.png" alt="">
+        </div>
+        <p class="comment-text">
+          Film ssenariysi o’zgacha edi. Aktyorlar mahorat bilan rollarga hissiyot bilan yondalashishgan,
+          qisqa qilganda detektiv janridagi yaxshi filmlardan!
+        </p>
+        <p class="comment-name">Saidalixon Sobirov</p>
+      </div>
+      <div class="comment-card">
+        <div class="rate-star">
+          <img src="/assets/stars.png" alt="">
+        </div>
+        <p class="comment-text">
+          Film ssenariysi o’zgacha edi. Aktyorlar mahorat bilan rollarga hissiyot bilan yondalashishgan,
+          qisqa qilganda detektiv janridagi yaxshi filmlardan!
+        </p>
+        <p class="comment-name">Saidalixon Sobirov</p>
+      </div>
+      <div class="comment-card">
+        <div class="rate-star">
+          <img src="/assets/stars.png" alt="">
+        </div>
+        <p class="comment-text">
+          Film ssenariysi o’zgacha edi. Aktyorlar mahorat bilan rollarga hissiyot bilan yondalashishgan,
+          qisqa qilganda detektiv janridagi yaxshi filmlardan!
+        </p>
+        <p class="comment-name">Saidalixon Sobirov</p>
+      </div>
+    </div>
+    <div class="rate-w">
+      <div class="rate-w-main">
+        <div class="rate-stars-main">
+          <p class="rate-title-text">Filmga bahoyingiz?</p>
+          <ul class="stars-block">
+            <li class="stars" *ngFor="let star of stars; let i= index">
+              <button (click)="countStar(star)" (mouseover)="addClass(star)" (mouseout)="removeClass()">
+                <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="stars-icon" [ngClass]="{'stars-icon-active': (star <= selectedValue)}">
+                  <path d="M13.0003 19.7086L5.79963 23.4944L7.17513 15.4759L1.3418 9.79777L9.3918 8.6311L12.9921 1.33594L16.5925 8.6311L24.6425 9.79777L18.8091 15.4759L20.1846 23.4944L13.0003 19.7086Z"  stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="stars-icon" [ngClass]="{'stars-icon-active': (star <= selectedValue)}"/>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="write-comment">
+          <p class="w-comment-text">Film haqida fikringiz?</p>
+          <textarea placeholder="Fiklaringizni bildiring)" class="w-comment-area"></textarea>
+          <button class="w-comment-send">Fikrimni yuborish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

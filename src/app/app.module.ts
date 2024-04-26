@@ -12,6 +12,11 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { MovieCardComponent } from './shared/components/movie-card/movie-card.component';
 import { SliderComponent } from './shared/components/slider/slider.component';
 import { MoviePageComponent } from './pages/movie-page/movie-page.component';
+import { AboutMovieComponent } from './shared/components/about-movie/about-movie.component';
+import { ActorsComponent } from './shared/components/actors/actors.component';
+import { RateComponent } from './shared/components/rate/rate.component';
+import { SimilarComponent } from './shared/components/similar/similar.component';
+import { SwitchComponent } from './shared/layouts/switch/switch.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +28,11 @@ import { MoviePageComponent } from './pages/movie-page/movie-page.component';
     MovieCardComponent,
     SliderComponent,
     MoviePageComponent,
+    AboutMovieComponent,
+    ActorsComponent,
+    RateComponent,
+    SimilarComponent,
+    SwitchComponent,
   ],
   imports: [
     BrowserModule,
