@@ -19,6 +19,7 @@ import { SimilarComponent } from './pages/similar/similar.component';
 import { SwitchComponent } from './shared/layouts/switch/switch.component';
 import { SeriesPageComponent } from './pages/series-page/series-page.component';
 import { SeriesCardComponent } from './shared/components/series-card/series-card.component';
+import { SwitchSeasonComponent } from './shared/layouts/switch-season/switch-season.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { SeriesCardComponent } from './shared/components/series-card/series-card
     SwitchComponent,
     SeriesPageComponent,
     SeriesCardComponent,
+    SwitchSeasonComponent,
   ],
   imports: [
     BrowserModule,
