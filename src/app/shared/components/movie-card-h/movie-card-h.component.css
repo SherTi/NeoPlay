@@ -2,19 +2,17 @@
   width: 329px;
   height: 214px;
   cursor: pointer;
+  position: relative;
+  transition: all .3s;
 }
-.movie-h-card:hover .movie-hover{
+.movie-h-card:hover{
   transform-origin:bottom center;
   transform: scale(1.1);
   transition: all .3s;
-}
-.movie-h-card:hover .movie-hover::after{
-  opacity: 1;
-  z-index: 2;
-  position: relative;
+  z-index: 5;
 }
 .movie-hover{
-  transition: all .3s;
+
 }
 .movie-img{
   position: relative;
