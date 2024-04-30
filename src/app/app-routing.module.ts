@@ -9,6 +9,10 @@ import {RateComponent} from "./pages/rate/rate.component";
 import {SimilarComponent} from "./pages/similar/similar.component";
 import {SeriesPageComponent} from "./pages/series-page/series-page.component";
 import {ActorsAboutComponent} from "./pages/actors-about/actors-about.component";
+import {FavoriteComponent} from "./pages/favorite/favorite.component";
+import {CatalogComponent} from "./pages/catalog/catalog.component";
+import {MovieComponent} from "./pages/movie/movie.component";
+import {ErrorComponent} from "./pages/error/error.component";
 
 const routes: Routes = [
   {path: "" , component:MainLayoutComponent, children:[
@@ -22,6 +26,10 @@ const routes: Routes = [
           {path: "similar", component: SimilarComponent}
         ]},
       {path: "actor-about", component: ActorsAboutComponent},
+      {path: "favorite", component:FavoriteComponent},
+      {path: "catalog", component:CatalogComponent},
+      {path: "movie-page", component: MovieComponent},
+      {path: "error", component:ErrorComponent}
     ]}
 ];
 

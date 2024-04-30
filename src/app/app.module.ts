@@ -21,6 +21,10 @@ import { SeriesPageComponent } from './pages/series-page/series-page.component';
 import { SeriesCardComponent } from './shared/components/series-card/series-card.component';
 import { SwitchSeasonComponent } from './shared/layouts/switch-season/switch-season.component';
 import { ActorsAboutComponent } from './pages/actors-about/actors-about.component';
+import { FavoriteComponent } from './pages/favorite/favorite.component';
+import { CatalogComponent } from './pages/catalog/catalog.component';
+import { MovieComponent } from './pages/movie/movie.component';
+import { ErrorComponent } from './pages/error/error.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +45,10 @@ import { ActorsAboutComponent } from './pages/actors-about/actors-about.componen
     SeriesCardComponent,
     SwitchSeasonComponent,
     ActorsAboutComponent,
+    FavoriteComponent,
+    CatalogComponent,
+    MovieComponent,
+    ErrorComponent,
   ],
   imports: [
     BrowserModule,

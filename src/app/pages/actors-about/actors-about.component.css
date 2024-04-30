@@ -116,6 +116,7 @@
   display: flex;
   justify-content: space-between;
   align-content: center;
+  position: relative;
 }
 .b-title-tex{
   font-size: 28px;
@@ -129,7 +130,9 @@
   padding: 12px;
   background: #3A3C4080;
   border-radius: 50%;
-  transform: translateY(-60%);
+  position: absolute;
+  top: -20px;
+  right: -20px;
   cursor: pointer;
 }
 .biography-text{
