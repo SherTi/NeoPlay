@@ -1,0 +1,71 @@
+<div class="actors-container">
+  <div class="actors-img">
+    <img src="/assets/ebca845491160264f2864ff54ad5062e.png" alt="" class="img-item">
+    <div class="container">
+      <div class="actors-des">
+        <div class="img-ava">
+          <img src="/assets/ebca845491160264f2864ff54ad5062e.png" alt="" class="actors-img-ava">
+        </div>
+        <div class="actors-about">
+          <p class="name-a">Hyeon Bin</p>
+          <p class="des">Aktyor</p>
+          <div class="a-des-block">
+            <div class="a-des-b-item">
+              <p class="a-des-text-title">25-sentabr, 1982. (42 yosh)</p>
+              <p class="a-des-text">(Tu’gilgan kuni)</p>
+            </div>
+            <div class="a-des-b-item mar-l">
+              <p class="a-des-text-title">Seoul, South Korea</p>
+              <p class="a-des-text">(Tu’gilgan joyi)</p>
+            </div>
+          </div>
+          <div class="biography">
+            <p class="b_text">
+              Xyon Bin mehribon ota-onasi va kuchli akasi bo'lgan oilaning kenja o'g'li sifatida odatdagi bolalikni o'tkazdi. O‘rta maktabda u katta kursantning maslahati bilan qatnashgan teatr to‘garagidagi aktyorlik jozibasini yaxshi ko’rdi, biroq otasi unga qarshilik ko‘rsatib, uning oddiy hayot kechirishini istadi....
+            </p>
+          </div>
+          <div class="a-des-more-btn" (click)="more = !more">Batafsil o'qish</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="biography-more" *ngIf="more">
+  <div class="b-more-container">
+    <div class="b-m-title">
+      <p class="b-title-tex">Biografiyasi</p>
+      <div class="close" (click)="more = !more">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g filter="url(#filter0_b_152_19212)">
+            <g clip-path="url(#clip0_152_19212)">
+              <rect width="24" height="24" rx="12" fill="#25272A" fill-opacity="0.55"/>
+              <g clip-path="url(#clip1_152_19212)">
+                <path d="M18 6L6 18" stroke="#D3D3D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 6L18 18" stroke="#D3D3D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+            </g>
+          </g>
+          <defs>
+            <filter id="filter0_b_152_19212" x="-12" y="-12" width="48" height="48" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feGaussianBlur in="BackgroundImageFix" stdDeviation="6"/>
+              <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_152_19212"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_152_19212" result="shape"/>
+            </filter>
+            <clipPath id="clip0_152_19212">
+              <rect width="24" height="24" rx="12" fill="white"/>
+            </clipPath>
+            <clipPath id="clip1_152_19212">
+              <rect width="24" height="24" fill="white"/>
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+    </div>
+    <p class="biography-text">
+      1982 yilda tug'ilgan Xyon Bin mehribon ota-onasi va kuchli akasi bo'lgan oilaning kenja o'g'li sifatida odatdagi bolalikni o'tkazdi. O‘rta maktabda u katta kursantning maslahati bilan qatnashgan teatr to‘garagidagi aktyorlik jozibasini sevib qoldi, biroq otasi unga qarshilik ko‘rsatib, uning oddiy hayot kechirishini istadi.
+      <br class="des-p">Otasi o'g'lining xohishiga qarshi tura olmay, o'sha paytda intiluvchan aktyorlar havas qilgan "Chung-Ang universiteti"ning teatr va kino fakultetiga o'qishga qabul qilinsa, unga ildiz otishini shart qilib qo'ydi. Xyon Bin qat'iy qabul qilindi va o'z ishtiyoqini namoyish etdi.
+      <br class="des-p">2003-yilda "Tanasoz" dramasida kichik rolda debyut qilgandan so'ng, Xyun Bin o'zining aktyorlik faoliyatini jiddiy boshladi. O'sha yili u kampus hayotiga bag'ishlangan va mashhurlikka erisha boshlagan "Nonstop 4" sitkomida jozibali kollej talabasi rolini o'ynadi. U 2004 yilda "Orol" dramasida ajoyib spektaklni namoyish etganidan keyin shuhrat qozondi. Uning rolni nozik hissiy tasviri yangi yulduz paydo bo'lishidan xabar berish uchun etarli edi.
+    </p>
+  </div>
+</div>

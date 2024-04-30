@@ -20,6 +20,7 @@ import { SwitchComponent } from './shared/layouts/switch/switch.component';
 import { SeriesPageComponent } from './pages/series-page/series-page.component';
 import { SeriesCardComponent } from './shared/components/series-card/series-card.component';
 import { SwitchSeasonComponent } from './shared/layouts/switch-season/switch-season.component';
+import { ActorsAboutComponent } from './pages/actors-about/actors-about.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { SwitchSeasonComponent } from './shared/layouts/switch-season/switch-sea
     SeriesPageComponent,
     SeriesCardComponent,
     SwitchSeasonComponent,
+    ActorsAboutComponent,
   ],
   imports: [
     BrowserModule,

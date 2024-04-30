@@ -8,6 +8,7 @@ import {ActorsComponent} from "./pages/actors/actors.component";
 import {RateComponent} from "./pages/rate/rate.component";
 import {SimilarComponent} from "./pages/similar/similar.component";
 import {SeriesPageComponent} from "./pages/series-page/series-page.component";
+import {ActorsAboutComponent} from "./pages/actors-about/actors-about.component";
 
 const routes: Routes = [
   {path: "" , component:MainLayoutComponent, children:[
@@ -20,6 +21,7 @@ const routes: Routes = [
           {path: "rate", component: RateComponent},
           {path: "similar", component: SimilarComponent}
         ]},
+      {path: "actor-about", component: ActorsAboutComponent},
     ]}
 ];
 
