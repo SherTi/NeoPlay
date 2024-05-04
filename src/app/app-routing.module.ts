@@ -13,6 +13,12 @@ import {FavoriteComponent} from "./pages/favorite/favorite.component";
 import {CatalogComponent} from "./pages/catalog/catalog.component";
 import {MovieComponent} from "./pages/movie/movie.component";
 import {ErrorComponent} from "./pages/error/error.component";
+import {ProfileComponent} from "./pages/profile/profile.component";
+import {PSwitchComponent} from "./shared/layouts/p-switch/p-switch.component";
+import {ProfileMainComponent} from "./pages/profile-main/profile-main.component";
+import {SafetyComponent} from "./pages/safety/safety.component";
+import {PaymentComponent} from "./pages/payment/payment.component";
+import {DevicesComponent} from "./pages/devices/devices.component";
 
 const routes: Routes = [
   {path: "" , component:MainLayoutComponent, children:[
@@ -29,6 +35,13 @@ const routes: Routes = [
       {path: "favorite", component:FavoriteComponent},
       {path: "catalog", component:CatalogComponent},
       {path: "movie-page", component: MovieComponent},
+      {path: "profile", component: ProfileComponent, children: [
+          {path: "", redirectTo: "profile-m", pathMatch: "full"},
+          {path: "profile-m", component: ProfileMainComponent},
+          {path: "safety", component: SafetyComponent},
+          {path: "payment", component: PaymentComponent},
+          {path: "devices", component: DevicesComponent},
+        ]},
     ]},
   {path: "error", component:ErrorComponent}
 ];

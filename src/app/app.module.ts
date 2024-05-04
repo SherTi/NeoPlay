@@ -25,6 +25,12 @@ import { FavoriteComponent } from './pages/favorite/favorite.component';
 import { CatalogComponent } from './pages/catalog/catalog.component';
 import { MovieComponent } from './pages/movie/movie.component';
 import { ErrorComponent } from './pages/error/error.component';
+import { ProfileComponent } from './pages/profile/profile.component';
+import { PSwitchComponent } from './shared/layouts/p-switch/p-switch.component';
+import { ProfileMainComponent } from './pages/profile-main/profile-main.component';
+import { SafetyComponent } from './pages/safety/safety.component';
+import { PaymentComponent } from './pages/payment/payment.component';
+import { DevicesComponent } from './pages/devices/devices.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +55,12 @@ import { ErrorComponent } from './pages/error/error.component';
     CatalogComponent,
     MovieComponent,
     ErrorComponent,
+    ProfileComponent,
+    PSwitchComponent,
+    ProfileMainComponent,
+    SafetyComponent,
+    PaymentComponent,
+    DevicesComponent,
   ],
   imports: [
     BrowserModule,

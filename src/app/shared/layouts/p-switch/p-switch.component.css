@@ -1,0 +1,30 @@
+.p-switch-container{
+  display: flex;
+}
+.p-switch-title{
+  font-size: 36px;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+.p-switch-block{
+  border: 1px solid  #3A3C40;
+  border-radius: 20px;
+  padding: 12px;
+}
+.p-switch-item{
+  font-size: 18px;
+  color: #919191;
+  font-weight: 500;
+  padding: 12px 32px 12px 32px;
+}
+.p-switch{
+  width: 295px;
+  margin-right: 40px;
+}
+.active-link{
+  color: #ffffff;
+  background: #25272A;
+  border-radius: 20px;
+
+}

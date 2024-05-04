@@ -1,0 +1,180 @@
+<div class="p-block">
+  <p class="title">Profil ma’lumotlarini tahrirlash</p>
+  <div class="p-block-main">
+    <div class="p-img">
+      <img src="/assets/profile.png" alt="" class="p-img-item">
+      <div class="edit" (click)="edit = !edit">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_158_36001)">
+            <path d="M4 20.0003H8L18.5 9.5003C18.7626 9.23766 18.971 8.92585 19.1131 8.58269C19.2553 8.23953 19.3284 7.87174 19.3284 7.5003C19.3284 7.12887 19.2553 6.76107 19.1131 6.41791C18.971 6.07475 18.7626 5.76295 18.5 5.5003C18.2374 5.23766 17.9256 5.02932 17.5824 4.88718C17.2392 4.74503 16.8714 4.67187 16.5 4.67188C16.1286 4.67188 15.7608 4.74503 15.4176 4.88718C15.0744 5.02932 14.7626 5.23766 14.5 5.5003L4 16.0003V20.0003Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M13.5 6.5L17.5 10.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          <defs>
+            <clipPath id="clip0_158_36001">
+              <rect width="24" height="24" fill="white"/>
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+    </div>
+    <div class="p-about">
+      <div class="form-b">
+        <p class="form-title">Profil nomi</p>
+        <input class="form-item" placeholder="+998 93 908 70 85" >
+      </div>
+      <div class="form-b">
+        <p class="form-title">Koshelok raqami:</p>
+        <div class="form-in-block">
+          <input class="form-item" placeholder="022299">
+          <div class="icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_158_36012)">
+                <path d="M7 9.667C7 8.95967 7.28099 8.28131 7.78115 7.78115C8.28131 7.28099 8.95967 7 9.667 7H18.333C18.6832 7 19.03 7.06898 19.3536 7.20301C19.6772 7.33704 19.9712 7.53349 20.2189 7.78115C20.4665 8.0288 20.663 8.32281 20.797 8.64638C20.931 8.96996 21 9.31676 21 9.667V18.333C21 18.6832 20.931 19.03 20.797 19.3536C20.663 19.6772 20.4665 19.9712 20.2189 20.2189C19.9712 20.4665 19.6772 20.663 19.3536 20.797C19.03 20.931 18.6832 21 18.333 21H9.667C9.31676 21 8.96996 20.931 8.64638 20.797C8.32281 20.663 8.0288 20.4665 7.78115 20.2189C7.53349 19.9712 7.33704 19.6772 7.20301 19.3536C7.06898 19.03 7 18.6832 7 18.333V9.667Z" stroke="#919191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M4.012 16.737C3.70534 16.5622 3.45027 16.3095 3.27258 16.0045C3.09488 15.6995 3.00085 15.353 3 15V5C3 3.9 3.9 3 5 3H15C15.75 3 16.158 3.385 16.5 4" stroke="#919191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_158_36012">
+                  <rect width="24" height="24" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="form-b">
+        <p class="form-title">Yosh</p>
+        <input class="form-item" placeholder="18+" >
+      </div>
+      <div class="g-switch">
+        <div class="g-block active">Erkak</div>
+        <div class="g-block">Ayol</div>
+      </div>
+      <div class="form-other">
+        <div class="f-text">
+          <p class="f-title">Profilni himoylash</p>
+          <p class="f-des">PIN kodni yoqishingiz mumkin, bu faqat profil egasiga akkauntga kirishga ruxsat beradi.</p>
+        </div>
+        <div class="f-switch">
+          <div class="f-round"></div>
+        </div>
+      </div>
+      <div class="save-btn">O'zgarishlarni saqlash</div>
+    </div>
+  </div>
+</div>
+<div class="edit-photo" *ngIf="edit">
+  <div class="e-container">
+    <div class="round-icon" (click)="edit = !edit">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_158_37262)">
+          <path d="M15 6L9 12L15 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        <defs>
+          <clipPath id="clip0_158_37262">
+            <rect width="24" height="24" fill="white"/>
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+    <div class="edit-block">
+      <p class="e-title">Profil rasmini tahrirlash</p>
+      <div class="edit-container">
+        <div class="e-img-block">
+          <img src="/assets/profile.png" alt="" class="e-img-item">
+        </div>
+        <div class="e-img-block">
+          <img src="/assets/profile.png" alt="" class="e-img-item">
+        </div>
+        <div class="e-img-block">
+          <img src="/assets/profile.png" alt="" class="e-img-item">
+        </div>
+        <div class="e-img-block">
+          <img src="/assets/profile.png" alt="" class="e-img-item">
+        </div>
+        <div class="e-img-block">
+          <img src="/assets/profile.png" alt="" class="e-img-item">
+        </div>
+        <div class="e-img-block">
+          <img src="/assets/profile.png" alt="" class="e-img-item">
+        </div>
+        <div class="e-img-block">
+          <img src="/assets/profile.png" alt="" class="e-img-item">
+        </div>
+        <div class="e-img-block">
+          <img src="/assets/profile.png" alt="" class="e-img-item">
+        </div>
+        <div class="e-img-block">
+          <img src="/assets/profile.png" alt="" class="e-img-item">
+        </div>
+        <div class="e-img-block">
+          <img src="/assets/profile.png" alt="" class="e-img-item">
+        </div>
+        <div class="e-img-block">
+          <img src="/assets/profile.png" alt="" class="e-img-item">
+        </div>
+        <div class="e-img-block">
+          <img src="/assets/profile.png" alt="" class="e-img-item">
+        </div>
+        <div class="e-img-block">
+          <img src="/assets/profile.png" alt="" class="e-img-item">
+        </div>
+        <div class="e-img-block">
+          <img src="/assets/profile.png" alt="" class="e-img-item">
+        </div>
+        <div class="e-img-block">
+          <img src="/assets/profile.png" alt="" class="e-img-item">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="pin" *ngIf="pin">
+  <div class="pin-container">
+    <p class="p-title">PIN kodni yaratish</p>
+    <p class="p-des">Agar siz to'satdan kodni unutsangiz, biz sizga shunchaki SMS orqali eslatamiz)</p>
+    <ul class="p-items">
+      <li class="p-item">
+        <input type="text" class="p-input">
+      </li>
+      <li class="p-item">
+        <input type="text" class="p-input">
+      </li>
+      <li class="p-item">
+        <input type="text" class="p-input">
+      </li>
+      <li class="p-item">
+        <input type="text" class="p-input">
+      </li>
+    </ul>
+    <div class="btn-set">
+      <div class="btn then">Davom eting</div>
+      <div class="btn cansel">Bekor qilish</div>
+    </div>
+  </div>
+  <div class="round-icon" (click)="pin = !pin">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_b_158_36470)">
+        <g clip-path="url(#clip0_158_36470)">
+          <g clip-path="url(#clip1_158_36470)">
+            <path d="M18 6L6 18" stroke="#D3D3D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6 6L18 18" stroke="#D3D3D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+        </g>
+      </g>
+      <defs>
+        <filter id="filter0_b_158_36470" x="-12" y="-12" width="48" height="48" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+          <feGaussianBlur in="BackgroundImageFix" stdDeviation="6"/>
+          <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_158_36470"/>
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_158_36470" result="shape"/>
+        </filter>
+        <clipPath id="clip0_158_36470">
+          <rect width="24" height="24" rx="12" fill="white"/>
+        </clipPath>
+        <clipPath id="clip1_158_36470">
+          <rect width="24" height="24" fill="white"/>
+        </clipPath>
+      </defs>
+    </svg>
+  </div>
+</div>
