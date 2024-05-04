@@ -29,8 +29,8 @@ const routes: Routes = [
       {path: "favorite", component:FavoriteComponent},
       {path: "catalog", component:CatalogComponent},
       {path: "movie-page", component: MovieComponent},
-      {path: "error", component:ErrorComponent}
-    ]}
+    ]},
+  {path: "error", component:ErrorComponent}
 ];
 
 @NgModule({

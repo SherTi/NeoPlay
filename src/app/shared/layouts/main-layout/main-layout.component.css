@@ -17,6 +17,11 @@
   align-items: center;
   gap: 12px;
 }
+.p-text{
+  font-size: 18px;
+  color: #ffffff;
+
+}
 .flag-block{
   width: 24px;
   height: 24px;
@@ -74,7 +79,9 @@
   gap: 6px;
 }
 .profile-block{
-  background: #77BC41;
+  border-radius: 50px;
+  padding: 14px 32px 14px 26px;
+  background: linear-gradient(98.42deg, #5E9B2F 11.48%, #77BC41 93.21%);
 }
 .h-profile{
   display: flex;
