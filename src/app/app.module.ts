@@ -31,6 +31,9 @@ import { ProfileMainComponent } from './pages/profile-main/profile-main.componen
 import { SafetyComponent } from './pages/safety/safety.component';
 import { PaymentComponent } from './pages/payment/payment.component';
 import { DevicesComponent } from './pages/devices/devices.component';
+import { PayPlatformComponent } from './shared/layouts/pay-platform/pay-platform.component';
+import { QrCodeComponent } from './shared/components/qr-code/qr-code.component';
+import { CardListComponent } from './shared/components/card-list/card-list.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +64,9 @@ import { DevicesComponent } from './pages/devices/devices.component';
     SafetyComponent,
     PaymentComponent,
     DevicesComponent,
+    PayPlatformComponent,
+    QrCodeComponent,
+    CardListComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,52 @@
+.card-container{
+  background: #0D0E10;
+  border-radius: 20px;
+  padding: 24px;
+  width: 365px;
+}
+.c-title{
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+.c-form{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.c-f-title{
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+}
+.c-f-input{
+  background: #191B1F;
+  border-radius: 20px;
+  padding: 14px 16px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #919191;
+}
+.c-f-check{
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.c-f-text{
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.btn{
+  border-radius: 50px;
+  padding: 14px 32px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  background: linear-gradient(98.42deg, #5E9B2F 11.48%, #77BC41 93.21%);
+}

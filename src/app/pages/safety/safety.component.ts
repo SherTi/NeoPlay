@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./safety.component.css']
 })
 export class SafetyComponent {
-
+  login: boolean = false;
+  email: boolean = false;
+  password: boolean = false;
+  confirmation: boolean = false;
 }

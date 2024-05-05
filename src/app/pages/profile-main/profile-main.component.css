@@ -4,7 +4,6 @@
   border: 1px solid  #25272A8C;
   width: 630px;
   border-radius: 20px;
-
 }
 .title{
   font-size: 32px;
@@ -256,6 +255,7 @@
   font-weight: 500;
   color: #ffffff;
   text-align: center;
+  cursor: pointer;
 }
 .then{
   background: linear-gradient(98.42deg, #5E9B2F 11.48%, #77BC41 93.21%);
@@ -267,4 +267,13 @@
   background: #141619;
   border-radius: 50px;
   color: #ffffff;
+}
+.edit-save-block{
+  display: flex;
+  justify-content: center;
+}
+.edit-save{
+  width: 250px;
+  margin-top: 24px;
+  font-size: 18px;
 }

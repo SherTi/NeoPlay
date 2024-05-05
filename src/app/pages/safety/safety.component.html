@@ -1,1 +1,281 @@
-<p>safety works!</p>
+<div class="p-block">
+  <p class="title">Xavfsizlik ma’lumotlari</p>
+  <div class="p-block-main">
+    <div class="form">
+      <p class="f-title">Login</p>
+      <input type="text" class="f-item" placeholder="+998 93 908 70 85">
+      <div class="f-edit" (click)="login = !login">
+        <div class="f-icon-t">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_158_36087)">
+              <path d="M4 20.0003H8L18.5 9.5003C18.7626 9.23766 18.971 8.92585 19.1131 8.58269C19.2553 8.23953 19.3284 7.87174 19.3284 7.5003C19.3284 7.12887 19.2553 6.76107 19.1131 6.41791C18.971 6.07475 18.7626 5.76295 18.5 5.5003C18.2374 5.23766 17.9256 5.02932 17.5824 4.88718C17.2392 4.74503 16.8714 4.67187 16.5 4.67188C16.1286 4.67188 15.7608 4.74503 15.4176 4.88718C15.0744 5.02932 14.7626 5.23766 14.5 5.5003L4 16.0003V20.0003Z" stroke="#919191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M13.5 6.5L17.5 10.5" stroke="#919191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_158_36087">
+                <rect width="24" height="24" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+          <span class="f-i-t">O’zgartirish</span>
+        </div>
+      </div>
+    </div>
+    <div class="form">
+      <p class="f-title">Email</p>
+      <input type="text" class="f-item" placeholder="info@gmail.com">
+      <div class="f-edit" (click)="email = !email">
+        <div class="f-icon-t">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_158_36087)">
+              <path d="M4 20.0003H8L18.5 9.5003C18.7626 9.23766 18.971 8.92585 19.1131 8.58269C19.2553 8.23953 19.3284 7.87174 19.3284 7.5003C19.3284 7.12887 19.2553 6.76107 19.1131 6.41791C18.971 6.07475 18.7626 5.76295 18.5 5.5003C18.2374 5.23766 17.9256 5.02932 17.5824 4.88718C17.2392 4.74503 16.8714 4.67187 16.5 4.67188C16.1286 4.67188 15.7608 4.74503 15.4176 4.88718C15.0744 5.02932 14.7626 5.23766 14.5 5.5003L4 16.0003V20.0003Z" stroke="#919191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M13.5 6.5L17.5 10.5" stroke="#919191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_158_36087">
+                <rect width="24" height="24" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+          <span class="f-i-t">O’zgartirish</span>
+        </div>
+      </div>
+    </div>
+    <div class="form">
+      <p class="f-title">Parol</p>
+      <input type="password" class="f-item" placeholder="*****">
+      <div class="f-edit" (click)="password = !password">
+        <div class="f-icon-t">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_158_36087)">
+              <path d="M4 20.0003H8L18.5 9.5003C18.7626 9.23766 18.971 8.92585 19.1131 8.58269C19.2553 8.23953 19.3284 7.87174 19.3284 7.5003C19.3284 7.12887 19.2553 6.76107 19.1131 6.41791C18.971 6.07475 18.7626 5.76295 18.5 5.5003C18.2374 5.23766 17.9256 5.02932 17.5824 4.88718C17.2392 4.74503 16.8714 4.67187 16.5 4.67188C16.1286 4.67188 15.7608 4.74503 15.4176 4.88718C15.0744 5.02932 14.7626 5.23766 14.5 5.5003L4 16.0003V20.0003Z" stroke="#919191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M13.5 6.5L17.5 10.5" stroke="#919191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_158_36087">
+                <rect width="24" height="24" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+          <span class="f-i-t">O’zgartirish</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="form-block" *ngIf="login">
+  <div class="form-container">
+    <div class="f-main-block">
+      <p class="f-l-title">Loginni o’zgartirish</p>
+      <p class="f-l-des">Akkauntingiz uchun yangi e-mail yoki telefon raqamini kiriting</p>
+      <div class="f-l-input-b">
+        <span class="f-l-i-title">E-mail yoki telefon raqam</span>
+        <input type="text" class="f-l-input">
+      </div>
+      <div class="btn-set">
+        <div class="btn then">Davom eting</div>
+        <div class="btn cansel">Bekor qilish</div>
+      </div>
+    </div>
+    <div class="round-icon" (click)="login = !login">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_b_158_36470)">
+          <g clip-path="url(#clip0_158_36470)">
+            <g clip-path="url(#clip1_158_36470)">
+              <path d="M18 6L6 18" stroke="#D3D3D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6 6L18 18" stroke="#D3D3D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+          </g>
+        </g>
+        <defs>
+          <filter id="filter0_b_158_36470" x="-12" y="-12" width="48" height="48" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feGaussianBlur in="BackgroundImageFix" stdDeviation="6"/>
+            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_158_36470"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_158_36470" result="shape"/>
+          </filter>
+          <clipPath id="clip0_158_36470">
+            <rect width="24" height="24" rx="12" fill="white"/>
+          </clipPath>
+          <clipPath id="clip1_158_36470">
+            <rect width="24" height="24" fill="white"/>
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+  </div>
+</div>
+<div class="form-block" *ngIf="email">
+  <div class="form-container">
+    <div class="f-main-block">
+      <p class="f-l-title">E-mail kiritish</p>
+      <p class="f-l-des">Akkauntingiz uchun yangi e-mail yoki telefon raqamini kiriting</p>
+      <div class="f-l-input-b">
+        <span class="f-l-i-title">E-mail qo’shish</span>
+        <input type="text" class="f-l-input">
+      </div>
+      <div class="btn-set">
+        <div class="btn then">Davom eting</div>
+        <div class="btn cansel">Bekor qilish</div>
+      </div>
+    </div>
+    <div class="round-icon" (click)="email = !email">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_b_158_36470)">
+          <g clip-path="url(#clip0_158_36470)">
+            <g clip-path="url(#clip1_158_36470)">
+              <path d="M18 6L6 18" stroke="#D3D3D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6 6L18 18" stroke="#D3D3D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+          </g>
+        </g>
+        <defs>
+          <filter id="filter0_b_158_36470" x="-12" y="-12" width="48" height="48" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feGaussianBlur in="BackgroundImageFix" stdDeviation="6"/>
+            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_158_36470"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_158_36470" result="shape"/>
+          </filter>
+          <clipPath id="clip0_158_36470">
+            <rect width="24" height="24" rx="12" fill="white"/>
+          </clipPath>
+          <clipPath id="clip1_158_36470">
+            <rect width="24" height="24" fill="white"/>
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+  </div>
+</div>
+<div class="form-block" *ngIf="password">
+  <div class="form-container">
+    <div class="f-main-block">
+      <p class="f-l-title">Parolni o’zgartirish</p>
+      <p class="f-l-des">Akkauntingizga kirish uchun yangi parolni yarating</p>
+      <div class="f-l-input-b m-b-24">
+        <span class="f-l-i-title">Hozirgi parolingiz</span>
+        <div class="f-p-i-block">
+          <input type="text" class="f-l-input">
+          <div class="f-p-icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.9019 16.0808C13.4842 16.9797 11.8028 17.5003 9.99993 17.5003C5.50644 17.5003 1.76813 14.2671 0.984375 10.0003C1.34827 8.0191 2.34911 6.26084 3.76673 4.94556L1.16106 2.33989L2.33957 1.16138L18.8388 17.6605L17.6603 18.8391L14.9019 16.0808ZM4.94601 6.12484C3.83862 7.13354 3.03117 8.47275 2.68533 10.0003C3.44986 13.3768 6.47018 15.8336 9.99993 15.8336C11.3328 15.8336 12.593 15.4833 13.6866 14.8654L11.9963 13.1752C11.4183 13.5394 10.7337 13.7503 9.99993 13.7503C7.92883 13.7503 6.24989 12.0713 6.24989 10.0003C6.24989 9.26642 6.46065 8.58183 6.82493 8.00377L4.94601 6.12484ZM10.7613 11.9401L8.06006 9.23892C7.96742 9.47475 7.91656 9.7315 7.91656 10.0003C7.91656 11.1508 8.84934 12.0836 9.99993 12.0836C10.2686 12.0836 10.5254 12.0327 10.7613 11.9401ZM17.3387 13.8272L16.1463 12.6348C16.6929 11.8558 17.0958 10.9656 17.3144 10.0003C16.5499 6.62357 13.5296 4.16689 9.99993 4.16689C9.29501 4.16689 8.61043 4.26486 7.96008 4.44857L6.64506 3.13354C7.68407 2.72474 8.81576 2.50022 9.99993 2.50022C14.4933 2.50022 18.2317 5.73335 19.0154 10.0003C18.7553 11.4166 18.1695 12.7191 17.3387 13.8272ZM9.76876 6.25723C9.84518 6.25258 9.92226 6.25022 9.99993 6.25022C12.0709 6.25022 13.7499 7.92915 13.7499 10.0003C13.7499 10.0778 13.7475 10.1549 13.7429 10.2313L9.76876 6.25723Z" fill="#919191"/>
+            </svg>
+          </div>
+        </div>
+        <div class="l-container">
+          <a routerLink="" class="l-item">Parolni unutdingizmi?</a>
+        </div>
+      </div>
+      <div class="f-l-input-b m-b-24">
+        <span class="f-l-i-title">Yangi parol</span>
+        <div class="f-p-i-block">
+          <input type="text" class="f-l-input">
+          <div class="f-p-icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.9019 16.0808C13.4842 16.9797 11.8028 17.5003 9.99993 17.5003C5.50644 17.5003 1.76813 14.2671 0.984375 10.0003C1.34827 8.0191 2.34911 6.26084 3.76673 4.94556L1.16106 2.33989L2.33957 1.16138L18.8388 17.6605L17.6603 18.8391L14.9019 16.0808ZM4.94601 6.12484C3.83862 7.13354 3.03117 8.47275 2.68533 10.0003C3.44986 13.3768 6.47018 15.8336 9.99993 15.8336C11.3328 15.8336 12.593 15.4833 13.6866 14.8654L11.9963 13.1752C11.4183 13.5394 10.7337 13.7503 9.99993 13.7503C7.92883 13.7503 6.24989 12.0713 6.24989 10.0003C6.24989 9.26642 6.46065 8.58183 6.82493 8.00377L4.94601 6.12484ZM10.7613 11.9401L8.06006 9.23892C7.96742 9.47475 7.91656 9.7315 7.91656 10.0003C7.91656 11.1508 8.84934 12.0836 9.99993 12.0836C10.2686 12.0836 10.5254 12.0327 10.7613 11.9401ZM17.3387 13.8272L16.1463 12.6348C16.6929 11.8558 17.0958 10.9656 17.3144 10.0003C16.5499 6.62357 13.5296 4.16689 9.99993 4.16689C9.29501 4.16689 8.61043 4.26486 7.96008 4.44857L6.64506 3.13354C7.68407 2.72474 8.81576 2.50022 9.99993 2.50022C14.4933 2.50022 18.2317 5.73335 19.0154 10.0003C18.7553 11.4166 18.1695 12.7191 17.3387 13.8272ZM9.76876 6.25723C9.84518 6.25258 9.92226 6.25022 9.99993 6.25022C12.0709 6.25022 13.7499 7.92915 13.7499 10.0003C13.7499 10.0778 13.7475 10.1549 13.7429 10.2313L9.76876 6.25723Z" fill="#919191"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="f-l-input-b m-b-24">
+        <span class="f-l-i-title">Yangi parolni takrorlang</span>
+        <div class="f-p-i-block">
+          <input type="text" class="f-l-input">
+          <div class="f-p-icon">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.9019 16.0808C13.4842 16.9797 11.8028 17.5003 9.99993 17.5003C5.50644 17.5003 1.76813 14.2671 0.984375 10.0003C1.34827 8.0191 2.34911 6.26084 3.76673 4.94556L1.16106 2.33989L2.33957 1.16138L18.8388 17.6605L17.6603 18.8391L14.9019 16.0808ZM4.94601 6.12484C3.83862 7.13354 3.03117 8.47275 2.68533 10.0003C3.44986 13.3768 6.47018 15.8336 9.99993 15.8336C11.3328 15.8336 12.593 15.4833 13.6866 14.8654L11.9963 13.1752C11.4183 13.5394 10.7337 13.7503 9.99993 13.7503C7.92883 13.7503 6.24989 12.0713 6.24989 10.0003C6.24989 9.26642 6.46065 8.58183 6.82493 8.00377L4.94601 6.12484ZM10.7613 11.9401L8.06006 9.23892C7.96742 9.47475 7.91656 9.7315 7.91656 10.0003C7.91656 11.1508 8.84934 12.0836 9.99993 12.0836C10.2686 12.0836 10.5254 12.0327 10.7613 11.9401ZM17.3387 13.8272L16.1463 12.6348C16.6929 11.8558 17.0958 10.9656 17.3144 10.0003C16.5499 6.62357 13.5296 4.16689 9.99993 4.16689C9.29501 4.16689 8.61043 4.26486 7.96008 4.44857L6.64506 3.13354C7.68407 2.72474 8.81576 2.50022 9.99993 2.50022C14.4933 2.50022 18.2317 5.73335 19.0154 10.0003C18.7553 11.4166 18.1695 12.7191 17.3387 13.8272ZM9.76876 6.25723C9.84518 6.25258 9.92226 6.25022 9.99993 6.25022C12.0709 6.25022 13.7499 7.92915 13.7499 10.0003C13.7499 10.0778 13.7475 10.1549 13.7429 10.2313L9.76876 6.25723Z" fill="#919191"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="btn-set">
+        <div class="btn then">Davom eting</div>
+        <div class="btn cansel">Bekor qilish</div>
+      </div>
+    </div>
+    <div class="round-icon" (click)="password = !password">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_b_158_36470)">
+          <g clip-path="url(#clip0_158_36470)">
+            <g clip-path="url(#clip1_158_36470)">
+              <path d="M18 6L6 18" stroke="#D3D3D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6 6L18 18" stroke="#D3D3D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+          </g>
+        </g>
+        <defs>
+          <filter id="filter0_b_158_36470" x="-12" y="-12" width="48" height="48" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feGaussianBlur in="BackgroundImageFix" stdDeviation="6"/>
+            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_158_36470"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_158_36470" result="shape"/>
+          </filter>
+          <clipPath id="clip0_158_36470">
+            <rect width="24" height="24" rx="12" fill="white"/>
+          </clipPath>
+          <clipPath id="clip1_158_36470">
+            <rect width="24" height="24" fill="white"/>
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+  </div>
+</div>
+<div class="form-block" *ngIf="confirmation">
+  <div class="form-container">
+    <div class="f-main-block">
+      <p class="f-l-title">E-mailni tasdiqlash</p>
+      <p class="f-l-des">s****@gmail.com manziliga tasdiqlash kodini yubordik, iltimos, maydonlarga ushbu kodni  kiriting</p>
+      <ul class="f-c-items">
+        <li>
+          <input type="text" class="f-c-item">
+        </li>
+        <li>
+          <input type="text" class="f-c-item">
+        </li>
+        <li>
+          <input type="text" class="f-c-item">
+        </li>
+        <li>
+          <input type="text" class="f-c-item">
+        </li>
+        <li>
+          <input type="text" class="f-c-item">
+        </li>
+        <li>
+          <input type="text" class="f-c-item">
+        </li>
+      </ul>
+      <div class="btn-set">
+        <div class="btn then">Davom eting</div>
+        <div class="btn cansel">Bekor qilish</div>
+      </div>
+    </div>
+    <div class="round-icon" (click)="confirmation = !confirmation">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_b_158_36470)">
+          <g clip-path="url(#clip0_158_36470)">
+            <g clip-path="url(#clip1_158_36470)">
+              <path d="M18 6L6 18" stroke="#D3D3D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6 6L18 18" stroke="#D3D3D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+          </g>
+        </g>
+        <defs>
+          <filter id="filter0_b_158_36470" x="-12" y="-12" width="48" height="48" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feGaussianBlur in="BackgroundImageFix" stdDeviation="6"/>
+            <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_158_36470"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_158_36470" result="shape"/>
+          </filter>
+          <clipPath id="clip0_158_36470">
+            <rect width="24" height="24" rx="12" fill="white"/>
+          </clipPath>
+          <clipPath id="clip1_158_36470">
+            <rect width="24" height="24" fill="white"/>
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+  </div>
+</div>

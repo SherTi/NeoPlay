@@ -19,6 +19,9 @@ import {ProfileMainComponent} from "./pages/profile-main/profile-main.component"
 import {SafetyComponent} from "./pages/safety/safety.component";
 import {PaymentComponent} from "./pages/payment/payment.component";
 import {DevicesComponent} from "./pages/devices/devices.component";
+import {PayPlatformComponent} from "./shared/layouts/pay-platform/pay-platform.component";
+import {QrCodeComponent} from "./shared/components/qr-code/qr-code.component";
+import {CardListComponent} from "./shared/components/card-list/card-list.component";
 
 const routes: Routes = [
   {path: "" , component:MainLayoutComponent, children:[
@@ -39,7 +42,13 @@ const routes: Routes = [
           {path: "", redirectTo: "profile-m", pathMatch: "full"},
           {path: "profile-m", component: ProfileMainComponent},
           {path: "safety", component: SafetyComponent},
-          {path: "payment", component: PaymentComponent},
+          {path: "payment", component: PaymentComponent, children:[
+            {path: "", redirectTo: "click", pathMatch: "full"},
+              {path: "click", component: QrCodeComponent},
+              {path: "payMe", component: QrCodeComponent},
+              {path:"card", component:QrCodeComponent},
+              {path:"addCard", component: CardListComponent},
+            ]},
           {path: "devices", component: DevicesComponent},
         ]},
     ]},

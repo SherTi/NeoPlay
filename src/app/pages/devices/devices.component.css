@@ -1,0 +1,13 @@
+.p-block{
+  padding: 32px 42px 42px 42px;
+  background: #141619;
+  border: 1px solid  #25272A8C;
+  width: 630px;
+  border-radius: 20px;
+}
+.title{
+  font-size: 32px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
