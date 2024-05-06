@@ -1,0 +1,91 @@
+.card-container{
+  background: #0D0E10;
+  border-radius: 20px;
+  padding: 24px;
+  width: 365px;
+}
+.c-title{
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+.card{
+  border-radius: 20px;
+  background: #141619;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.card-number{
+  font-weight: 400;
+  font-size: 16px;
+  color: #D3D3D4;
+}
+.card-des{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.round-icon{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #25272A;
+  cursor: pointer;
+}
+.add-card{
+  border-radius: 20px;
+  background: #25272A;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+}
+.add-card-des{
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.card-delete{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(13, 14, 16, 0.5);
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-d-block{
+  width: 455px;
+  border-radius: 24px;
+  background: #191B1F;
+  border: 1px solid #3A3C40;
+  padding: 24px;
+}
+.btn-set{
+  display: flex;
+  gap: 12px;
+}
+.btn{
+  border-radius: 50px;
+  padding: 14px 32px;
+  background: #25272A;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+}
+.delete{
+  background: #A52626;
+}

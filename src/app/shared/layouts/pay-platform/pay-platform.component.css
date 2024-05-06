@@ -106,3 +106,13 @@
 .active-link-cost{
   display: flex;
 }
+.pay-d-t-des{
+  font-size: 14px;
+  font-weight: 400;
+  color: #919191;
+}
+.card-save{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}

@@ -34,6 +34,7 @@ import { DevicesComponent } from './pages/devices/devices.component';
 import { PayPlatformComponent } from './shared/layouts/pay-platform/pay-platform.component';
 import { QrCodeComponent } from './shared/components/qr-code/qr-code.component';
 import { CardListComponent } from './shared/components/card-list/card-list.component';
+import { CardSaveListComponent } from './shared/components/card-save-list/card-save-list.component';
 
 @NgModule({
   declarations: [
@@ -67,6 +68,7 @@ import { CardListComponent } from './shared/components/card-list/card-list.compo
     PayPlatformComponent,
     QrCodeComponent,
     CardListComponent,
+    CardSaveListComponent,
   ],
   imports: [
     BrowserModule,

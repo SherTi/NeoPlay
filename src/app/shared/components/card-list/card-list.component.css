@@ -50,3 +50,29 @@
   cursor: pointer;
   background: linear-gradient(98.42deg, #5E9B2F 11.48%, #77BC41 93.21%);
 }
+.c-f-item{
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.c-f-check-item{
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  background: #77BC41;
+  appearance: none;
+  cursor: pointer;
+}
+.c-f-check-item::after {
+  box-sizing: border-box;
+  content: url("/assets/check.png");
+  position: absolute;
+  font-size: 10px;
+  color: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.c-f-check-item:checked::after{
+  display: none;
+}

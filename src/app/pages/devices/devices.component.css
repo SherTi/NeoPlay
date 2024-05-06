@@ -11,3 +11,76 @@
   color: #ffffff;
   margin-bottom: 32px;
 }
+.p-history{
+  display: flex;
+  width: 100%;
+  gap: 32px;
+}
+.p-h-title-text{
+  font-size: 14px;
+  font-weight: 400;
+  color:#919191;
+}
+.p-h-item-text{
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+}
+.p-h-item{
+  padding: 16px 0;
+  width: 156px;
+  height: 80px;
+  display: flex;
+  align-items: flex-end;
+}
+.p-h-li{
+  border-bottom: 0.5px solid #3A3C40;
+}
+.btn{
+  padding: 14px 24px;
+  border-radius: 20px;
+  background: #25272A;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+}
+.delete-container{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(13, 14, 16, 0.5);
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.delete-block{
+  width: 455px;
+  border-radius: 24px;
+  background: #191B1F;
+  border: 1px solid #3A3C40;
+  padding: 48px;
+}
+.btn-set{
+  display: flex;
+  gap: 12px;
+}
+.delete{
+  background: #A52626;
+}
+.d-title{
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+.d-title span{
+  color: #A52626;
+}
