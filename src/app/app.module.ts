@@ -42,6 +42,7 @@ import { SuccessfullyPageComponent } from './pages/successfully-page/successfull
 import { SuccessfullyLayoutsComponent } from './shared/layouts/successfully-layouts/successfully-layouts.component';
 import { PinIComponent } from './pages/pin-i/pin-i.component';
 import { PinUComponent } from './pages/pin-u/pin-u.component';
+import { ViewWComponent } from './pages/view-w/view-w.component';
 
 @NgModule({
   declarations: [
@@ -84,6 +85,7 @@ import { PinUComponent } from './pages/pin-u/pin-u.component';
     SuccessfullyLayoutsComponent,
     PinIComponent,
     PinUComponent,
+    ViewWComponent,
   ],
   imports: [
     BrowserModule,

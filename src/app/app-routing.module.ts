@@ -29,6 +29,7 @@ import {SuccessfullyPageComponent} from "./pages/successfully-page/successfully-
 import {SuccessfullyLayoutsComponent} from "./shared/layouts/successfully-layouts/successfully-layouts.component";
 import {PinIComponent} from "./pages/pin-i/pin-i.component";
 import {PinUComponent} from "./pages/pin-u/pin-u.component";
+import {ViewWComponent} from "./pages/view-w/view-w.component";
 
 const routes: Routes = [
   {path: "" , component:MainLayoutComponent, children:[
@@ -72,6 +73,7 @@ const routes: Routes = [
       {path: "", component: SuccessfullyPageComponent},
       {path: "pin", component: PinIComponent},
       {path: "pin-u", component:PinUComponent},
+      {path: "view", component: ViewWComponent}
     ]},
 ];
 
