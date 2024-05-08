@@ -38,6 +38,10 @@ import { LoginComponent } from './shared/layouts/login/login.component';
 import { LoginPageComponent } from './shared/components/login-page/login-page.component';
 import { LogupPageComponent } from './shared/components/logup-page/logup-page.component';
 import { RecoveryComponent } from './shared/components/recovery/recovery.component';
+import { SuccessfullyPageComponent } from './pages/successfully-page/successfully-page.component';
+import { SuccessfullyLayoutsComponent } from './shared/layouts/successfully-layouts/successfully-layouts.component';
+import { PinIComponent } from './pages/pin-i/pin-i.component';
+import { PinUComponent } from './pages/pin-u/pin-u.component';
 
 @NgModule({
   declarations: [
@@ -76,6 +80,10 @@ import { RecoveryComponent } from './shared/components/recovery/recovery.compone
     LoginPageComponent,
     LogupPageComponent,
     RecoveryComponent,
+    SuccessfullyPageComponent,
+    SuccessfullyLayoutsComponent,
+    PinIComponent,
+    PinUComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,54 @@
+
+.block{
+  width: 640px;
+  background: #0D0E1059;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 48px;
+  border: 1px solid #ffffff;
+  position: relative;
+  z-index: 2;
+}
+.btn-set{
+  display: flex;
+  gap: 16px ;
+}
+.btn{
+  border-radius: 50px;
+  padding: 14px 32px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+}
+.then{
+  background: linear-gradient(98.42deg, #5E9B2F 11.48%, #77BC41 93.21%);
+}
+.cansel{
+  border: 1px solid #FFFFFF;
+}
+.title{
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+.des{
+  font-size: 18px;
+  font-weight: 400;
+  color: #D5D5E1;
+  margin-bottom: 24px;
+}
+.b-img{
+  position: absolute;
+  top: -205px;
+  z-index: -4;
+  left: 70px;
+}
+.kids{
+  left: auto;
+  right: 70px;
+  z-index: 3;
+}
