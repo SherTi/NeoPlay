@@ -13,8 +13,15 @@
 }
 .p-history{
   display: flex;
+  flex-direction: column;
   width: 100%;
-  gap: 32px;
+  gap: 16px;
+}
+.p-h-items{
+  display: flex;
+}
+.p-h-title{
+  width: 100%;
 }
 .p-h-title-text{
   font-size: 14px;
@@ -27,11 +34,10 @@
   font-weight: 400;
 }
 .p-h-item{
-  padding: 16px 0;
-  width: 156px;
-  height: 80px;
+  padding:0 0 12px 0;
   display: flex;
   align-items: flex-end;
+  width: 100%;
 }
 .p-h-li{
   border-bottom: 0.5px solid #3A3C40;
@@ -83,4 +89,7 @@
 }
 .d-title span{
   color: #A52626;
+}
+.border{
+  border-bottom: 0.5px solid #3A3C40;
 }

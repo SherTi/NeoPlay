@@ -7,7 +7,6 @@ import { MainComponent } from './pages/main/main.component';
 import { MainLayoutComponent } from './shared/layouts/main-layout/main-layout.component';
 import { MovieCardHComponent } from './shared/components/movie-card-h/movie-card-h.component';
 import { MovieHSliderComponent } from './shared/components/movie-h-slider/movie-h-slider.component';
-import Swiper from "swiper";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { MovieCardComponent } from './shared/components/movie-card/movie-card.component';
 import { SliderComponent } from './shared/components/slider/slider.component';
@@ -35,6 +34,10 @@ import { PayPlatformComponent } from './shared/layouts/pay-platform/pay-platform
 import { QrCodeComponent } from './shared/components/qr-code/qr-code.component';
 import { CardListComponent } from './shared/components/card-list/card-list.component';
 import { CardSaveListComponent } from './shared/components/card-save-list/card-save-list.component';
+import { LoginComponent } from './shared/layouts/login/login.component';
+import { LoginPageComponent } from './shared/components/login-page/login-page.component';
+import { LogupPageComponent } from './shared/components/logup-page/logup-page.component';
+import { RecoveryComponent } from './shared/components/recovery/recovery.component';
 
 @NgModule({
   declarations: [
@@ -69,6 +72,10 @@ import { CardSaveListComponent } from './shared/components/card-save-list/card-s
     QrCodeComponent,
     CardListComponent,
     CardSaveListComponent,
+    LoginComponent,
+    LoginPageComponent,
+    LogupPageComponent,
+    RecoveryComponent,
   ],
   imports: [
     BrowserModule,

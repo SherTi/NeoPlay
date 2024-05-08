@@ -14,15 +14,17 @@ import {CatalogComponent} from "./pages/catalog/catalog.component";
 import {MovieComponent} from "./pages/movie/movie.component";
 import {ErrorComponent} from "./pages/error/error.component";
 import {ProfileComponent} from "./pages/profile/profile.component";
-import {PSwitchComponent} from "./shared/layouts/p-switch/p-switch.component";
 import {ProfileMainComponent} from "./pages/profile-main/profile-main.component";
 import {SafetyComponent} from "./pages/safety/safety.component";
 import {PaymentComponent} from "./pages/payment/payment.component";
 import {DevicesComponent} from "./pages/devices/devices.component";
-import {PayPlatformComponent} from "./shared/layouts/pay-platform/pay-platform.component";
 import {QrCodeComponent} from "./shared/components/qr-code/qr-code.component";
 import {CardListComponent} from "./shared/components/card-list/card-list.component";
 import {CardSaveListComponent} from "./shared/components/card-save-list/card-save-list.component";
+import {LoginComponent} from "./shared/layouts/login/login.component";
+import {LoginPageComponent} from "./shared/components/login-page/login-page.component";
+import {LogupPageComponent} from "./shared/components/logup-page/logup-page.component";
+import {RecoveryComponent} from "./shared/components/recovery/recovery.component";
 
 const routes: Routes = [
   {path: "" , component:MainLayoutComponent, children:[
@@ -54,7 +56,13 @@ const routes: Routes = [
           {path: "devices", component: DevicesComponent},
         ]},
     ]},
-  {path: "error", component:ErrorComponent}
+  {path: "error", component:ErrorComponent},
+  {path: "login", component: LoginComponent, children:[
+      {path: "", redirectTo: "singIn", pathMatch: "full"},
+      {path: "singIn", component: LoginPageComponent},
+      {path: "singUp", component: LogupPageComponent},
+    ]},
+  {path: "recovery", component: RecoveryComponent},
 ];
 
 @NgModule({
