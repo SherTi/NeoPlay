@@ -11,13 +11,13 @@
                 <path d="M20 18H4" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
               </svg>
             </div>
-            <a href="/" class="h-logo-item">
+            <a routerLink="" class="h-logo-item">
               <img src="/assets/logo.png" alt="" class="h-logo-item">
             </a>
           </div>
           <div class="h-nav">
             <ul class="nav-main">
-              <a routerLink="/error"><li class="nav-el">Bosh sahifa</li></a>
+              <a routerLink=""><li class="nav-el">Bosh sahifa</li></a>
               <a routerLink="/movie-page"><li class="nav-el" routerLinkActive="a-link">Filmlar</li></a>
               <a routerLink="error"><li class="nav-el">Seriallar</li></a>
               <a routerLink="error"><li class="nav-el">Bolalar uchun</li></a>
@@ -37,7 +37,7 @@
                 <path d="M9 8.5H15" stroke="#D3D3D4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </div>
-            <div class="round-block lang-switch-block">
+            <div class="lang-switch-block" (click)="switchLang = !switchLang">
               <div class="lang-switch">
                 <div class="flag-block">
                   <img src="/assets/flag.png" alt="" class="flag-item">
@@ -52,6 +52,14 @@
                     </clipPath>
                   </defs>
                 </svg>
+              </div>
+              <div class="other-lang-container" *ngIf="switchLang">
+                <div class="other-lang active-lang">
+                  <img src="/assets/flag.png" alt="" >
+                </div>
+                <div class="other-lang">
+                  <img src="/assets/russ-flag.png" alt="" >
+                </div>
               </div>
             </div>
             <div class="round-block profile-block" (click)="menu = !menu">
@@ -105,7 +113,7 @@
                   </a>
                 </li>
                 <li class="menu-list-item-l">
-                  <a routerLink="" class="m-l-item-little">
+                  <a routerLink="/login" class="m-l-item-little">
                     <img src="/assets/log-out.png" alt="" class="list-img-l">
                     <p class="l-text">Profildan chiqish</p>
                   </a>

@@ -32,6 +32,7 @@ export class MainLayoutComponent {
   showBlock:boolean = false;
   isOpen: boolean = false;
   menu: boolean = false;
+  switchLang: boolean = false;
 
 
 

@@ -12,22 +12,23 @@ export class MovieHSliderComponent implements OnInit, AfterViewInit {
   @ViewChild('swiper') swiperContainer?: ElementRef;
   @ViewChild('end_elem') endElem?:ElementRef;
   @ViewChild('start_elem') startElem?:ElementRef;
-  constructor() {}
+  constructor() {
+  }
   ngOnInit(): void {}
   ngAfterViewInit(): void {
     register();
-    Object.assign(this.swiperContainer?.nativeElement, this.swiper );
+    const swiper: SwiperOptions = {
+      modules: [Navigation, Pagination],
+      slidesPerView: 4,
+      slidesPerGroup:1,
+      spaceBetween: 50,
+      navigation: {
+        nextEl: (this.endElem?.nativeElement as HTMLElement),
+        prevEl: (this.startElem?.nativeElement as HTMLElement),
+      },
+    };
+    Object.assign(this.swiperContainer?.nativeElement, swiper);
     (this.swiperContainer?.nativeElement as any).initialize()
   }
 
-  public swiper: SwiperOptions = {
-    modules: [Navigation, Pagination],
-    navigation: {
-      nextEl: (this.endElem?.nativeElement as HTMLElement),
-      prevEl: (this.startElem?.nativeElement as HTMLElement),
-    },
-    slidesPerView: 4,
-    slidesPerGroup:1,
-    spaceBetween: 50,
-  };
 }

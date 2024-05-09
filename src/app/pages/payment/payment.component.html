@@ -25,7 +25,7 @@
       <input class="form-item money" placeholder="30,000 so'm">
     </div>
   </div>
-  <div class="btn then">Balansni to'ldirish</div>
+  <div class="btn then" (click)="pay = !pay">Balansni to'ldirish</div>
 </div>
 <div class="p-block">
   <p class="title-p">To’lovlar tarixi</p>
@@ -66,4 +66,4 @@
     </ul>
   </div>
 </div>
-<div class="app-pay-platform"></div>
+<div class="app-pay-platform" *ngIf="pay"></div>

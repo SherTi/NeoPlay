@@ -70,14 +70,31 @@
   fill: #ffffff;
 }
 .lang-switch-block{
-  padding: 10px 12px 10px 20px;
-  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  background: #25272A8C;
+  position: relative;
 }
 .lang-switch{
+  padding: 10px 12px 10px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 6px;
+  cursor: pointer;
+}
+.other-lang-container{
+  position: absolute;
+  top: 45px;
+  background: #25272A8C;
+  border-radius: 20px;
+}
+.other-lang{
+  padding: 10px 30px;
+  cursor: pointer;
+  user-select: none;
 }
 .profile-block{
   border-radius: 50px;
@@ -107,6 +124,10 @@
 }
 .header-container  {
   padding: 0 calc((100% - 1300px) / 2);
+}
+.active-lang{
+  background: #77BC41;
+  border-radius: 32px;
 }
 
 
