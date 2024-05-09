@@ -43,6 +43,8 @@ import { SuccessfullyLayoutsComponent } from './shared/layouts/successfully-layo
 import { PinIComponent } from './pages/pin-i/pin-i.component';
 import { PinUComponent } from './pages/pin-u/pin-u.component';
 import { ViewWComponent } from './pages/view-w/view-w.component';
+import { EditProfileComponent } from './pages/edit-profile/edit-profile.component';
+import { KidsPageComponent } from './pages/kids-page/kids-page.component';
 
 @NgModule({
   declarations: [
@@ -86,6 +88,8 @@ import { ViewWComponent } from './pages/view-w/view-w.component';
     PinIComponent,
     PinUComponent,
     ViewWComponent,
+    EditProfileComponent,
+    KidsPageComponent,
   ],
   imports: [
     BrowserModule,

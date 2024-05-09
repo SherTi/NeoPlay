@@ -1,0 +1,82 @@
+.header-s{
+  padding: 18px 0;
+}
+.main-block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 170px;
+  position: relative;
+}
+.kids-container{
+  width: 100%;
+  height: 100vh;
+  background: url("/assets/kids-update-bg.png");
+  background-size: cover;
+}
+.kids-main-block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.round-icon{
+  width: 48px;
+  height: 48px;
+  background: #3A3C4080;
+  backdrop-filter: blur(3px);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+}
+.k-block{
+  display: flex;
+}
+.kids-year{
+  width: 500px;
+  padding: 32px 48px 48px 48px;
+  border: 1px solid #25272A8C;
+  background: #0D0E10;
+  border-radius: 20px;
+}
+.title{
+  font-size: 32px;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+.k-years{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 32px;
+}
+.y-block{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #191B1F;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.k-btn{
+  background: linear-gradient(98.42deg, #5E9B2F 11.48%, #77BC41 93.21%);
+  width: 100%;
+  border-radius: 50px;
+  padding: 14px 32px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.active-block{
+  border: 2px solid #77BC41;
+}

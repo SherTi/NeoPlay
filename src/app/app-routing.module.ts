@@ -30,6 +30,8 @@ import {SuccessfullyLayoutsComponent} from "./shared/layouts/successfully-layout
 import {PinIComponent} from "./pages/pin-i/pin-i.component";
 import {PinUComponent} from "./pages/pin-u/pin-u.component";
 import {ViewWComponent} from "./pages/view-w/view-w.component";
+import {EditProfileComponent} from "./pages/edit-profile/edit-profile.component";
+import {KidsPageComponent} from "./pages/kids-page/kids-page.component";
 
 const routes: Routes = [
   {path: "" , component:MainLayoutComponent, children:[
@@ -73,8 +75,10 @@ const routes: Routes = [
       {path: "", component: SuccessfullyPageComponent},
       {path: "pin", component: PinIComponent},
       {path: "pin-u", component:PinUComponent},
-      {path: "view", component: ViewWComponent}
+      {path: "view", component: ViewWComponent},
+      {path: "edit-profile", component: EditProfileComponent},
     ]},
+  {path: "kids", component:KidsPageComponent}
 ];
 
 @NgModule({
