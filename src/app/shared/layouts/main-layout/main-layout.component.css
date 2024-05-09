@@ -178,3 +178,77 @@
 .a-link{
   color: #ffffff;
 }
+.list-img{
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+.menu-bar{
+  width: 302px;
+  background: #141619;
+  border-radius: 32px;
+  padding: 16px;
+  position: absolute;
+  top: 78px;
+  right: 0;
+}
+.menu-list{
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.m-l-item{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 4px;
+  background: #191B1F;
+  border-radius: 16px 16px 0 0;
+}
+.menu-list-item{
+  display: flex;
+  flex-direction: column;
+}
+.l-text{
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  width: 100%;
+}
+.l-icon{
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.menu-list-l{
+  padding: 8px;
+  border-radius: 0 0 16px 16px;
+  border: 1px solid #25272A;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.m-l-item-little{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 4px;
+}
+.list-img-l{
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+.menu-list-o-item{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+}
+.menu-list-other{
+  padding: 12px;
+}

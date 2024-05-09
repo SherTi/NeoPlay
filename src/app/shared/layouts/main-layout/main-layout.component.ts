@@ -31,6 +31,7 @@ export class MainLayoutComponent {
   lastScroll:number = 0;
   showBlock:boolean = false;
   isOpen: boolean = false;
+  menu: boolean = false;
 
 
 
