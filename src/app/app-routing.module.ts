@@ -32,6 +32,7 @@ import {PinUComponent} from "./pages/pin-u/pin-u.component";
 import {ViewWComponent} from "./pages/view-w/view-w.component";
 import {EditProfileComponent} from "./pages/edit-profile/edit-profile.component";
 import {KidsPageComponent} from "./pages/kids-page/kids-page.component";
+import {SubPageComponent} from "./pages/sub-page/sub-page.component";
 
 const routes: Routes = [
   {path: "" , component:MainLayoutComponent, children:[
@@ -48,6 +49,7 @@ const routes: Routes = [
       {path: "favorite", component:FavoriteComponent},
       {path: "catalog", component:CatalogComponent},
       {path: "movie-page", component: MovieComponent},
+      {path:"subscription", component: SubPageComponent},
       {path: "profile", component: ProfileComponent, children: [
           {path: "", redirectTo: "profile-m", pathMatch: "full"},
           {path: "profile-m", component: ProfileMainComponent},
