@@ -1,5 +1,6 @@
 .sub-container{
   margin-top: 168px;
+  margin-bottom: 100px;
 }
 .title{
   font-size: 36px;
@@ -13,6 +14,11 @@
   color: #ffffff;
   font-weight: 500;
   text-align: center;
+}
+.sub-blocks{
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 .sub-b{
   width: 425px;
@@ -28,7 +34,116 @@
   padding: 24px;
 }
 .s-body-des{
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 400;
   color: #ffffff;
+}
+.s-b-t-title{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+  margin-top: 24px;
+}
+.s-b-t-img{
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.s-b-title-b{
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.s-b-body-text{
+  font-size: 16px;
+  font-weight: 400;
+  color: #D5D5E1;
+}
+.s-body-text-block{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+.s-price-block{
+  display: flex;
+  flex-direction: column;
+}
+.s-p-title{
+  font-size: 16px;
+  font-weight: 400;
+  color: #D5D5E1;
+  margin-bottom: 6px;
+}
+.s-p-body{
+  font-size: 24px;
+  font-weight: 500;
+  color: #8CD851;
+}
+.s-check-b-item{
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  border: 1px solid #919191;
+  appearance: none;
+  cursor: pointer;
+}
+.s-check-b-item::after {
+  box-sizing: border-box;
+  content: url("/assets/check.png");
+  position: absolute;
+  font-size: 10px;
+  color: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: none;
+}
+.s-check-b-item:checked::after{
+  display: block;
+}
+.s-check-b-item:checked{
+  background: #77BC41;
+  border: none;
+}
+.s-check-b{
+  position: relative;
+  cursor: pointer;
+  margin-right: 8px;
+}
+.s-check{
+  display: flex;
+  align-items: center;
+  padding: 4px;
+}
+.mar-t{
+  margin-top: 24px;
+}
+.s-check-text{
+  font-size: 16px;
+  color: #919191;
+  font-weight: 400;
+}
+.s-buy-btn{
+  background: #25272A;
+  border-radius: 50px;
+  padding: 16px 24px;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 24px;
+  cursor: pointer;
+}
+.bg-g{
+  background: linear-gradient(98.42deg, #5E9B2F 11.48%, #77BC41 93.21%);
+}
+.s-container-check{
+  margin: 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
 }
