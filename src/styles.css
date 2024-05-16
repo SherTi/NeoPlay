@@ -4,7 +4,7 @@
 body{
   margin: 0;
   padding: 0;
-  background: #0D0E10;
+  background: #000000;
   cursor: default;
 }
 html{
@@ -57,4 +57,14 @@ body::-webkit-scrollbar{
 body::-webkit-scrollbar-thumb{
   background: #77BC41;
   border-radius: 6px;
+}
+@media (max-width: 495px) {
+  .container{
+    padding: 0 calc((100% - 400px) / 2);
+  }
+}
+@media (max-width: 375px) {
+  .container{
+    padding: 0 calc((100% - 355px) / 2);
+  }
 }

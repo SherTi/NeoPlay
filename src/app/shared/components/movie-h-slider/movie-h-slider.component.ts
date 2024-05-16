@@ -26,6 +26,12 @@ export class MovieHSliderComponent implements OnInit, AfterViewInit {
         nextEl: (this.endElem?.nativeElement as HTMLElement),
         prevEl: (this.startElem?.nativeElement as HTMLElement),
       },
+      breakpoints: {
+        425:{
+          slidesPerView: 1.9,
+        }
+      }
+
     };
     Object.assign(this.swiperContainer?.nativeElement, swiper);
     (this.swiperContainer?.nativeElement as any).initialize()

@@ -18,7 +18,7 @@
   display: flex;
   gap: 6px;
 }
-.swiper{
+.swiper-h{
   margin-bottom: 70px;
   padding-top: 24px;
 }
@@ -32,4 +32,13 @@
   transition: all .3s;
   z-index: 5;
   position: absolute;
+}
+@media (max-width: 495px){
+  .title{
+    display: none;
+  }
+  .swiper-h{
+    margin: 0;
+    padding: 0;
+  }
 }
