@@ -340,5 +340,23 @@
   }
   .footer-main{
     flex-direction: column;
+    gap: 0;
+  }
+  .footer-container{
+    border: 1px solid #3A3C40;
+    border-radius: 32px 32px 0 0;
+  }
+  .ads-block{
+    width: 100%;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  .ads-platforms-1{
+    flex-direction: column;
+  }
+  .ads-title{
+    font-size: 20px;
+    font-weight: 500;
+    width: 70%;
   }
 }

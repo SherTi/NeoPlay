@@ -21,4 +21,7 @@
   .nav-icon{
     display: none;
   }
+  .swiper{
+    margin-bottom: 0;
+  }
 }
