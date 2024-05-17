@@ -68,3 +68,30 @@
   font-weight: 600;
   color: #ffffff;
 }
+@media (max-width: 495px) {
+  .movie-rate{
+    display: none;
+  }
+  .mobi-rate{
+    display: flex;
+    background: #0E1621A6;
+    padding: 2px 4px 2px 2px;
+    border-radius: 12px;
+    gap: 4px;
+  }
+  .mobi-r-text{
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .movie-card{
+    width: 120px;
+  }
+  .movie-img-item{
+    width: 120px;
+  }
+  .movie-text{
+    font-size: 14px;
+    font-weight: 400;
+  }
+}

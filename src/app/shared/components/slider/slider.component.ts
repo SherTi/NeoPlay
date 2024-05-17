@@ -39,6 +39,11 @@ export class SliderComponent implements OnInit, AfterViewInit {
           this.isEnd = swiper.isEnd;
           this.isBeginning = swiper.isBeginning;
         }
+      },
+      breakpoints: {
+        425:{
+          slidesPerView: 3.4,
+        }
       }
     };
     Object.assign(this.swiperContainer?.nativeElement, swiper );
