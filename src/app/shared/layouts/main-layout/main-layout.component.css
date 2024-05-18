@@ -319,6 +319,9 @@
 .h-mobi{
   display: none;
 }
+.m-version{
+  display: none;
+}
 @media (max-width: 495px) {
   .h-logo-item{
     display: none;
@@ -358,5 +361,23 @@
     font-size: 20px;
     font-weight: 500;
     width: 70%;
+  }
+  .pc-version{
+    display: none;
+  }
+  .m-version{
+    display: flex;
+  }
+  .f-link-title{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .f-block{
+    width: 100%;
+  }
+  .f-link{
+    padding: 8px 0;
   }
 }

@@ -68,6 +68,9 @@
   font-weight: 600;
   color: #ffffff;
 }
+.mobi-rate{
+  display: none;
+}
 @media (max-width: 495px) {
   .movie-rate{
     display: none;
