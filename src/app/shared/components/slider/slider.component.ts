@@ -22,7 +22,7 @@ export class SliderComponent implements OnInit, AfterViewInit {
         nextEl: (this.endElem?.nativeElement as HTMLElement),
         prevEl: (this.startElem?.nativeElement as HTMLElement),
       },
-      slidesPerView: 5.5,
+      slidesPerView: 1,
       slidesPerGroup:1,
       spaceBetween: 40,
       freeMode: true,
@@ -42,7 +42,55 @@ export class SliderComponent implements OnInit, AfterViewInit {
       },
       breakpoints: {
         425:{
-          slidesPerView: 3.4,
+          slidesPerView: 3.5,
+        },
+        1000:{
+          slidesPerView: 3.9,
+        },
+        1100:{
+          slidesPerView: 4.3,
+        },
+        1200:{
+          slidesPerView: 4.7,
+        },
+        1300:{
+          slidesPerView: 5.1,
+        },
+        1400:{
+          slidesPerView: 5.5,
+        },
+        1500:{
+          slidesPerView: 5.9,
+        },
+        1600:{
+          slidesPerView: 6.3,
+        },
+        1700:{
+          slidesPerView: 6.7,
+        },
+        1800:{
+          slidesPerView: 7.1,
+        },
+        1900:{
+          slidesPerView: 7.5,
+        },
+        2000:{
+          slidesPerView: 7.9,
+        },
+        2100:{
+          slidesPerView: 8.3,
+        },
+        2200:{
+          slidesPerView: 8.7,
+        },
+        2300:{
+          slidesPerView: 9.1,
+        },
+        2400:{
+          slidesPerView: 9.5,
+        },
+        2500:{
+          slidesPerView: 9.9,
         }
       }
     };

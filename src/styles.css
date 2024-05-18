@@ -47,7 +47,8 @@ h2{
   padding: 0;
 }
 .container  {
-  padding: 0 calc((100% - 1300px) / 2);
+  /*padding: 0 calc((100% - 1300px) / 2);*/
+  padding: 0 70px;
 }
 
 body::-webkit-scrollbar{
