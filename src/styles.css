@@ -4,7 +4,7 @@
 body{
   margin: 0;
   padding: 0;
-  background: #000000;
+  background: #0D0E10;
   cursor: default;
 }
 html{
@@ -49,6 +49,10 @@ h2{
 .container  {
   /*padding: 0 calc((100% - 1300px) / 2);*/
   padding: 0 70px;
+}
+
+footer {
+  background-color: #000000;
 }
 
 body::-webkit-scrollbar{

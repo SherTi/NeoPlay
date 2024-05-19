@@ -160,11 +160,19 @@
   padding: 70px 0;
   background: #030303;
 }
+
+
+
 .movie-container{
   border: 1px solid #3A3C40;
   border-radius: 32px;
   padding: 70px 0;
   background: #0D0E10;
+  margin-bottom: 12px;
+}
+
+.movie-container:last-child {
+  margin-bottom: 70px;
 }
 
 

@@ -120,12 +120,12 @@
 .movie-card-details__movie_name {
   margin: 0 0 8px;
   color: #ffffff;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 600;
 }
 
 .movie-card-details__details {
-  font-size: 14px;
+  font-size: 9px;
   font-weight: 400;
   color: #919191;
 }
@@ -143,12 +143,13 @@
 .movie-card-details__movie_actions {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .movie_actions__play_btn {
-  width: 214px;
-  height: 40px;
+  /*width: 135px;*/
+  flex: 1;
+  height: 25px;
   text-align: center;
   background: linear-gradient(81deg, rgba(94,155,47,1) 0%, rgba(119,188,65,1) 100%);
   border-radius: 50px;
@@ -181,15 +182,15 @@
 
 .play_btn__txt {
   display: inline-block;
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 500;
   color: #ffffff;
   margin-left: 12px;
 }
 
 .movie_actions__favourite_btn {
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
   border-radius: 50px;
   background-color: #25272A;
   margin-left: 12px;
