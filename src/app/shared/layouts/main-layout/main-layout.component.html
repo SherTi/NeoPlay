@@ -57,8 +57,8 @@
             <ul class="nav-main">
               <a routerLink=""><li class="nav-el">Bosh sahifa</li></a>
               <a routerLink="/movie-page"><li class="nav-el" routerLinkActive="a-link">Filmlar</li></a>
-              <a routerLink="error"><li class="nav-el">Seriallar</li></a>
-              <a routerLink="error"><li class="nav-el">Bolalar uchun</li></a>
+              <a routerLink="/error"><li class="nav-el">Seriallar</li></a>
+              <a routerLink="/error"><li class="nav-el">Bolalar uchun</li></a>
               <a routerLink="/catalog"><li class="nav-el" routerLinkActive="a-link">Katalog</li></a>
             </ul>
           </div>
@@ -191,13 +191,13 @@
 <router-outlet></router-outlet>
 <div class="container">
   <div class="mobi-nav-panel pc-none">
-    <a routerLink="" class="m-nav-item">
+    <a routerLink="/" class="m-nav-item">
       <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg" class="m-nav-icon" routerLinkActive="m-link-active">
         <path d="M1 9.93841C1 8.71422 1.56058 7.55744 2.52142 6.79888L8.02142 2.45677C9.47466 1.30948 11.5253 1.30948 12.9786 2.45677L18.4786 6.79888C19.4394 7.55744 20 8.71422 20 9.93841V16.5C20 18.7091 18.2091 20.5 16 20.5H14.5C13.9477 20.5 13.5 20.0523 13.5 19.5V16.5C13.5 15.3954 12.6046 14.5 11.5 14.5H9.5C8.39543 14.5 7.5 15.3954 7.5 16.5V19.5C7.5 20.0523 7.05228 20.5 6.5 20.5H5C2.79086 20.5 1 18.7091 1 16.5L1 9.93841Z" stroke-width="1.5"/>
       </svg>
       <p class="m-nav-text" routerLinkActive="m-link-active">Asosiy</p>
     </a>
-    <a routerLink="" class="m-nav-item">
+    <a routerLink="/catalog" class="m-nav-item">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="m-nav-icon" routerLinkActive="m-link-active">
         <path d="M10 7C10 6.46957 10.2107 5.96086 10.5858 5.58579C10.9609 5.21071 11.4696 5 12 5H18C18.5304 5 19.0391 5.21071 19.4142 5.58579C19.7893 5.96086 20 6.46957 20 7V17C20 17.5304 19.7893 18.0391 19.4142 18.4142C19.0391 18.7893 18.5304 19 18 19H12C11.4696 19 10.9609 18.7893 10.5858 18.4142C10.2107 18.0391 10 17.5304 10 17V7Z" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M7 7V17" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
@@ -205,20 +205,20 @@
       </svg>
       <p class="m-nav-text" routerLinkActive="m-link-active">Katalog</p>
     </a>
-    <a routerLink="" class="m-nav-item">
+    <a routerLink="/movie-page" class="m-nav-item">
       <svg width="23" height="15" viewBox="0 0 23 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="m-nav-icon" routerLinkActive="m-link-active">
         <rect x="1.5" y="1" width="14" height="13" rx="3.5" stroke-width="1.5"/>
         <path d="M15.5 6.16062L19.6162 3.3063C20.412 2.75446 21.5 3.324 21.5 4.29241V10.7255C21.5 11.6903 20.419 12.2607 19.6226 11.7159L15.5 8.89637V6.16062Z" stroke-width="1.5"/>
       </svg>
       <p class="m-nav-text" routerLinkActive="m-link-active">Filmlar</p>
     </a>
-    <a routerLink="" class="m-nav-item">
+    <a routerLink="/error" class="m-nav-item">
       <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg" class="m-nav-icon" routerLinkActive="m-link-active">
         <path d="M16.2189 8.52728L18.3442 9.67696L18.7891 9.92693C19.737 10.4595 19.737 11.8325 18.7891 12.365L12.7525 15.7566C11.3524 16.5432 9.64756 16.5432 8.24754 15.7566L2.21092 12.365C1.26302 11.8325 1.26303 10.4595 2.21093 9.92693L2.65585 9.67696L4.66334 8.52728M16.6811 13.6461L18.6129 14.6185C19.6092 15.1201 19.6412 16.5398 18.6685 17.0862L12.7525 20.4101C11.3524 21.1966 9.64756 21.1966 8.24754 20.4101L2.4178 17.1347C1.4284 16.5789 1.48291 15.1278 2.5112 14.6487L4.66334 13.6461M12.7525 10.8112L18.7891 7.41961C19.737 6.88705 19.737 5.51405 18.7891 4.98149L12.7525 1.58993C11.3524 0.803358 9.64756 0.803356 8.24754 1.58993L2.21093 4.98149C1.26303 5.51405 1.26302 6.88705 2.21092 7.41961L8.24754 10.8112C9.64756 11.5977 11.3524 11.5977 12.7525 10.8112Z" stroke-width="1.5"/>
       </svg>
       <p class="m-nav-text" routerLinkActive="m-link-active">Seriallar</p>
     </a>
-    <a routerLink="" class="m-nav-item">
+    <a routerLink="/profile" class="m-nav-item">
       <svg width="19" height="4" viewBox="0 0 19 4" fill="none" xmlns="http://www.w3.org/2000/svg" class="m-nav-icon-d" routerLinkActive="m-link-active-d">
         <path d="M2.5 0C1.4 0 0.5 0.9 0.5 2C0.5 3.1 1.4 4 2.5 4C3.6 4 4.5 3.1 4.5 2C4.5 0.9 3.6 0 2.5 0ZM16.5 0C15.4 0 14.5 0.9 14.5 2C14.5 3.1 15.4 4 16.5 4C17.6 4 18.5 3.1 18.5 2C18.5 0.9 17.6 0 16.5 0ZM9.5 0C8.4 0 7.5 0.9 7.5 2C7.5 3.1 8.4 4 9.5 4C10.6 4 11.5 3.1 11.5 2C11.5 0.9 10.6 0 9.5 0Z" fill="none" class="m-nav-icon-d" routerLinkActive="m-link-active-d"/>
       </svg>
