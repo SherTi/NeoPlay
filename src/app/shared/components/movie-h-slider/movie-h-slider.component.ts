@@ -27,6 +27,9 @@ export class MovieHSliderComponent implements OnInit, AfterViewInit {
         prevEl: (this.startElem?.nativeElement as HTMLElement),
       },
       breakpoints: {
+        1920:{
+          slidesPerView: 5.4,
+        },
         425:{
           slidesPerView: 1.9,
         }

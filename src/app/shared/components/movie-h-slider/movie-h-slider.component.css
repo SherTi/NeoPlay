@@ -19,19 +19,8 @@
   gap: 6px;
 }
 .swiper-h{
-  margin-bottom: 70px;
-  padding-top: 24px;
-}
-.app-movie-card-h{
-  transition: all .3s;
-  z-index: -2;
-}
-.swiper-slide:hover .app-movie-card-h{
-  transform-origin:bottom center;
-  transform: scale(1.1);
-  transition: all .3s;
-  z-index: 5;
-  position: absolute;
+  padding: 160px 0;
+  margin: -176px 0 105px;
 }
 @media (max-width: 495px){
   .title{
