@@ -46,6 +46,7 @@ import { ViewWComponent } from './pages/view-w/view-w.component';
 import { EditProfileComponent } from './pages/edit-profile/edit-profile.component';
 import { KidsPageComponent } from './pages/kids-page/kids-page.component';
 import { SubPageComponent } from './pages/sub-page/sub-page.component';
+import { BannerSliderComponent } from './shared/components/banner-slider/banner-slider.component';
 
 @NgModule({
   declarations: [
@@ -92,6 +93,7 @@ import { SubPageComponent } from './pages/sub-page/sub-page.component';
     EditProfileComponent,
     KidsPageComponent,
     SubPageComponent,
+    BannerSliderComponent,
   ],
   imports: [
     BrowserModule,
