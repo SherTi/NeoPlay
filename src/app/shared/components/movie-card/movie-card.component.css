@@ -225,4 +225,7 @@
     font-size: 14px;
     font-weight: 400;
   }
+  .movie-card-details{
+    display: none;
+  }
 }

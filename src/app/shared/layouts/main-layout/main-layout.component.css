@@ -322,6 +322,9 @@
 .m-version{
   display: none;
 }
+.pc-none{
+  display: none;
+}
 @media (max-width: 495px) {
   .h-logo-item{
     display: none;

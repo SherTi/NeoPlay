@@ -61,11 +61,9 @@
 }
 .ads-des{
   position: absolute;
-  top: 42px;
   left: 70px;
   bottom: 42px;
   width: 36%;
-  height: 100%;
   display: flex;
   gap: 32px;
   flex-direction: column;
@@ -98,7 +96,7 @@
   left: 0;
   right: 50%;
   bottom: 0;
-  z-index: -1;
+  z-index: 0;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.94) 42%, rgba(0, 0, 0, 0) 100%);
   border-radius: 32px;
 }
@@ -167,6 +165,9 @@
   font-size: 36px;
   color: #ffffff;
   font-weight: 600;
+}
+.ads-img{
+  line-height: 0;
 }
 .ads-img-d{
   position: absolute;
@@ -359,5 +360,14 @@
     background: #0D0E10;
     border-radius: 32px;
     margin-bottom: 12px;
+  }
+  .m-none{
+    display: flex;
+  }
+  .advertising{
+    margin-bottom: 0;
+  }
+  .advertising::after{
+    display: none;
   }
 }

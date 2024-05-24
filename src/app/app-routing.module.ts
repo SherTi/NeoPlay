@@ -80,7 +80,7 @@ const routes: Routes = [
       {path: "view", component: ViewWComponent},
       {path: "edit-profile", component: EditProfileComponent},
     ]},
-  {path: "kids", component:KidsPageComponent}
+  {path: "kids", component:KidsPageComponent},
 ];
 
 @NgModule({

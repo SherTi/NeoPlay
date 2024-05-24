@@ -211,4 +211,7 @@
     font-size: 14px;
     font-weight: 400;
   }
+  .movie-h-card__details{
+    display: none;
+  }
 }
