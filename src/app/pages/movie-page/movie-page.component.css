@@ -27,10 +27,10 @@
   width: 100%;
   height: 100%;
 }
+
 .banner-img{
   width: 100%;
-  height: 700px;
-  object-fit: cover;
+  object-fit: contain;
 }
 .banner-des{
   font-size: 18px;
@@ -356,7 +356,6 @@
 .actor-block{
   display: flex;
   flex-direction: column;
-  width: 146px;
   cursor: pointer;
 }
 .actor-img-item{
@@ -365,6 +364,10 @@
   border-radius: 50%;
   margin-bottom: 12px;
   background:#191B1F;
+}
+.actor-img{
+  width: 100%;
+  object-fit: contain;
 }
 .actor-name{
   font-size: 16px;
@@ -540,6 +543,7 @@
   }
   .banner-btn{
     margin-top: 24px;
+    margin-bottom: 24px;
   }
   .banner-img-block{
     position: relative;
@@ -556,5 +560,136 @@
   }
   .d-none{
     display: none;
+  }
+
+  .a-img-block{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .a-img-item{
+    width: 200px;
+    object-fit: contain;
+  }
+  .name-movie{
+    font-size: 20px;
+  }
+  .g-title{
+    font-size: 14px;
+  }
+  .g-item{
+    font-size: 12px;
+    margin-top: 8px;
+    align-items: center;
+  }
+  .more-btn{
+    width: 100%;
+  }
+  .banner-rate{
+    font-size: 12px;
+  }
+  .genre{
+    flex-direction: column;
+  }
+  .movie-switch{
+    overflow: scroll;
+    margin-bottom: 24px;
+  }
+  .movie-switch::-webkit-scrollbar{
+   display: none;
+  }
+  .s-components{
+    width: 124px;
+    font-size: 12px;
+  }
+  .switch-container{
+    padding-top:24px;
+  }
+  .banner-text{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .trailer{
+    display: none;
+  }
+  .banner-des-rate{
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+
+
+
+  .about-movie{
+    flex-direction: column;
+  }
+  .des-movie{
+    width: 100%;
+  }
+  .director-producer{
+    flex-direction: column;
+  }
+  .actor-title{
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  .actor-img-item{
+    width: 60px;
+    height: 60px;
+  }
+  .actor-block{
+    width: 60px;
+    overflow: hidden;
+  }
+  .actor-name{
+    font-size: 12px;
+  }
+  .rate-container{
+    flex-direction: column;
+  }
+  .actors{
+    margin-bottom: 24px;
+  }
+  .director-producer{
+    gap: 24px;
+  }
+  .rate-title{
+    font-size: 20px;
+  }
+  .comment{
+    width: 100%;
+  }
+  .comment-card{
+    width: 100%;
+  }
+  .rate-w{
+    width: 100%;
+  }
+  .comment-text{
+    font-size: 14px;
+  }
+  .comment-name{
+    font-size: 14px;
+  }
+  .rate-title-text{
+    font-size: 20px;
+  }
+  .stars-icon{
+    width: 20px;
+    height: 20px;
+  }
+  .stars{
+    width: 40px;
+    padding: 0;
+    height: 40px;
+  }
+  .w-comment-text{
+    display: none;
+  }
+  .w-comment-send{
+    padding: 12px 32px;
+    font-size: 14px;
   }
 }

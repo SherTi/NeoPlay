@@ -3,6 +3,8 @@
   border-radius: 50px;
   color: #ffffff;
   background:#25272A8C;
+  font-size: 18px;
+  font-weight: 500;
 }
 .season-container{
   display: flex;
@@ -13,4 +15,14 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+@media (max-width: 495px) {
+  .season-item{
+    padding: 5px 22px;
+    font-size: 12px;
+  }
+  .season-container{
+    margin-bottom: 14px;
+  }
 }
