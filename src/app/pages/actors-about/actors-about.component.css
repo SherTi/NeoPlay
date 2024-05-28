@@ -28,7 +28,7 @@
 }
 .actors-img-ava{
   width: 420px;
-  height: 420px;
+  object-fit: contain;
   border: 1px solid #25272A;
   box-shadow: 0 0 12px 0 #0D0E1040 inset;
   border-radius: 50px;
@@ -140,4 +140,87 @@
   color: #D3D3D4;
   font-weight: 400;
   display: flex;
+}
+.actors-container__biography{
+  display: none;
+}
+@media (max-width: 495px) {
+  .actors-des{
+    flex-direction: column;
+  }
+  .img-item{
+    display: none;
+  }
+  .actors-img::before{
+    display: none;
+  }
+  .actors-des{
+    position: static;
+  }
+  .img-ava{
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .actors-img-ava{
+    width: 335px;
+  }
+  .actors-des{
+    padding: 24px 0;
+    margin-top: 88px;
+  }
+  .actors-about{
+    width: 100%;
+  }
+  .img-ava{
+    margin-bottom: 24px;
+  }
+  .a-des-more-btn{
+    width: 100%;
+  }
+  .name-a{
+    font-size: 20px;
+  }
+  .des{
+    font-size: 14px;
+  }
+  .a-des-block{
+    flex-direction: column;
+  }
+  .a-des-text-title{
+    font-size: 18px;
+  }
+  .b_text{
+    font-size: 14px;
+    color: #919191;
+  }
+  .biography-more{
+    position: fixed;
+    bottom: 0;
+    z-index: 101;
+    top: auto;
+    padding: 0;
+  }
+  .b-more-container{
+    padding: 24px 24px 32px 24px;
+    border-radius: 32px 32px 0 0;
+  }
+  .b-title-tex{
+    margin-bottom: 16px;
+    font-size: 20px;
+  }
+  .biography-text{
+    font-size: 14px;
+  }
+  .close{
+    width: 40px;
+    height: 40px;
+    background: transparent;
+  }
+  .close_icon{
+    width: 18px;
+    height: 18px;
+    fill: rgba(58, 60, 64, 1);
+  }
 }

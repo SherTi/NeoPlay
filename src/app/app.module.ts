@@ -11,12 +11,6 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { MovieCardComponent } from './shared/components/movie-card/movie-card.component';
 import { SliderComponent } from './shared/components/slider/slider.component';
 import { MoviePageComponent } from './pages/movie-page/movie-page.component';
-import { AboutMovieComponent } from './pages/about-movie/about-movie.component';
-import { ActorsComponent } from './pages/actors/actors.component';
-import { RateComponent } from './pages/rate/rate.component';
-import { SimilarComponent } from './pages/similar/similar.component';
-import { SwitchComponent } from './shared/layouts/switch/switch.component';
-import { SeriesPageComponent } from './pages/series-page/series-page.component';
 import { SeriesCardComponent } from './shared/components/series-card/series-card.component';
 import { SwitchSeasonComponent } from './shared/layouts/switch-season/switch-season.component';
 import { ActorsAboutComponent } from './pages/actors-about/actors-about.component';
@@ -58,12 +52,6 @@ import { BannerSliderComponent } from './shared/components/banner-slider/banner-
     MovieCardComponent,
     SliderComponent,
     MoviePageComponent,
-    AboutMovieComponent,
-    ActorsComponent,
-    RateComponent,
-    SimilarComponent,
-    SwitchComponent,
-    SeriesPageComponent,
     SeriesCardComponent,
     SwitchSeasonComponent,
     ActorsAboutComponent,

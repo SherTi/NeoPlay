@@ -444,6 +444,20 @@
   flex-direction: column;
   margin-bottom: 32px;
 }
+.rate-star{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.stars-icon-r{
+  width: 28px;
+  height: 28px;
+  fill: #F99E17;
+  stroke: #F99E17;
+}
+.stars-icon-r__stroke{
+  stroke: #F99E17;
+}
 .stars-block{
   display: flex;
   gap: 8px;
@@ -495,6 +509,10 @@
   border-radius: 50px;
 }
 /*rate*/
+.pc-none{
+  display: none;
+}
+
 @media (max-width: 495px) {
   .banner-main{
     width: 100%;
@@ -691,5 +709,12 @@
   .w-comment-send{
     padding: 12px 32px;
     font-size: 14px;
+  }
+  .stars-icon-r{
+    width: 20px;
+    height: 20px;
+  }
+  .films_container{
+    margin-top: 12px;
   }
 }

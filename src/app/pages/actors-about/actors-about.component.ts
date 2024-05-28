@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
 export class ActorsAboutComponent {
 
   more:boolean = false;
+  actorsBiography: boolean = false;
 
 }
