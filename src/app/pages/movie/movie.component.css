@@ -36,6 +36,8 @@
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+  position: relative;
+  z-index: 101;
 }
 .bg{
   justify-content: center;
@@ -46,69 +48,47 @@
   flex-wrap: wrap;
   gap: 24px;
 }
+.filter-select{
+  position: relative;
+}
+.listDown{
+  overflow: visible;
+  max-height: 100%;
+}
+.filter-container__list{
+  border-radius: 16px;
+  background: #141619;
+  margin-top: 8px;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+}
+
+.filter-block__item{
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 13px 20px 13px 20px;
+}
+.active_icon{
+  transform: rotate(180deg);
+  transition: transform .2s;
+}
 @media (max-width: 495px) {
-  .banner-main{
+  .filter-container{
+    flex-direction: column;
+  }
+  .title-text{
+    font-size: 20px;
+  }
+  .filter-block{
     width: 100%;
-    background: #0D0E10;
-    padding-bottom: 32px;
-    border-radius: 32px;
-    margin-top: 84px;
   }
-  .banner-des{
-    display: none;
+  .main-container{
+    padding-top:20px;
+    margin-top: 88px;
   }
-  .banner-item-des{
+  .filter-container__list{
     position: static;
-    width: 100%;
-  }
-  .banner-main::after{
-    display: none;
-  }
-  .banner-title{
-    width: 176px;
-    margin: 0;
-    padding: 18px 0;
-  }
-  .banner-title-block{
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.76) 26.84%, rgba(0, 0, 0, 0) 100%);
-    border-radius: 32px;
-  }
-  .banner-btn-item{
-    font-size: 14px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8px 0 8px 0;
-  }
-  .banner-container{
-    width: 100%;
-  }
-  .banner-text{
-    width: 100%;
-  }
-  .banner-btn{
-    margin-top: 24px;
-  }
-  .banner-img-block{
-    position: relative;
-  }
-  .banner-img{
-    border-radius: 32px 32px 0 0;
-  }
-  .volume{
-    position: absolute;
-    top: 12px;
-    display: flex;
-    right: 20px;
-    backdrop-filter: blur(3px);
-  }
-  .d-none{
-    display: none;
   }
 }

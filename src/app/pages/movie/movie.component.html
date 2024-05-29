@@ -4,35 +4,73 @@
       <h1 class="title-text">Filmlar</h1>
     </div>
     <div class="filter-container">
-      <div class="filter-block">
-        <span class="filter-name">Ovoz tili</span>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="filter-icon">
-          <path d="M19 9L12.7809 14.3306C12.3316 14.7158 11.6684 14.7158 11.2191 14.3306L5 9" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-        </svg>
+      <div class="filter-select" [ngClass]="{listDown: filterSelect}">
+        <div class="filter-block" (click)="filterSelect = !filterSelect">
+          <span class="filter-name">Ovoz tili</span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="filter-icon" [ngClass]="{active_icon:filterSelect}">
+            <path d="M19 9L12.7809 14.3306C12.3316 14.7158 11.6684 14.7158 11.2191 14.3306L5 9" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <ul class="filter-container__list" *ngIf="filterSelect" @filter>
+          <li class="filter-block__item">O'zbek tili</li>
+          <li class="filter-block__item">Русский</li>
+        </ul>
       </div>
-      <div class="filter-block">
-        <span class="filter-name">Janr</span>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="filter-icon">
-          <path d="M19 9L12.7809 14.3306C12.3316 14.7158 11.6684 14.7158 11.2191 14.3306L5 9" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-        </svg>
+      <div class="filter-select" [ngClass]="{listDown: filterSelect1}">
+        <div class="filter-block" (click)="filterSelect1 = !filterSelect1">
+          <span class="filter-name">Janr</span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="filter-icon" [ngClass]="{active_icon:filterSelect1}">
+            <path d="M19 9L12.7809 14.3306C12.3316 14.7158 11.6684 14.7158 11.2191 14.3306L5 9" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <ul class="filter-container__list" *ngIf="filterSelect1" @filter>
+          <li class="filter-block__item">Jangari film</li>
+          <li class="filter-block__item">Vestern</li>
+          <li class="filter-block__item">Detektiv film</li>
+          <li class="filter-block__item">Hujjatli film</li>
+          <li class="filter-block__item">Drama</li>
+          <li class="filter-block__item">Tarixiy film</li>
+        </ul>
       </div>
-      <div class="filter-block">
-        <span class="filter-name">Davlati</span>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="filter-icon">
-          <path d="M19 9L12.7809 14.3306C12.3316 14.7158 11.6684 14.7158 11.2191 14.3306L5 9" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-        </svg>
+      <div class="filter-select" [ngClass]="{listDown: filterSelect2}">
+        <div class="filter-block" (click)="filterSelect2 = !filterSelect2">
+          <span class="filter-name">Davlati</span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="filter-icon" [ngClass]="{active_icon:filterSelect2}">
+            <path d="M19 9L12.7809 14.3306C12.3316 14.7158 11.6684 14.7158 11.2191 14.3306L5 9" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <ul class="filter-container__list" *ngIf="filterSelect2" @filter>
+          <li class="filter-block__item">Barchasi</li>
+          <li class="filter-block__item">O'zbekiston</li>
+          <li class="filter-block__item">Hindiston</li>
+          <li class="filter-block__item">Rossiya</li>
+        </ul>
       </div>
-      <div class="filter-block">
-        <span class="filter-name">Chiqqan yili</span>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="filter-icon">
-          <path d="M19 9L12.7809 14.3306C12.3316 14.7158 11.6684 14.7158 11.2191 14.3306L5 9" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-        </svg>
+      <div class="filter-select" [ngClass]="{listDown: filterSelect3}">
+        <div class="filter-block" (click)="filterSelect3 = !filterSelect3">
+          <span class="filter-name">Chiqqan yili</span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="filter-icon" [ngClass]="{active_icon:filterSelect3}">
+            <path d="M19 9L12.7809 14.3306C12.3316 14.7158 11.6684 14.7158 11.2191 14.3306L5 9" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <ul class="filter-container__list" *ngIf="filterSelect3" @filter>
+          <li class="filter-block__item">2022</li>
+          <li class="filter-block__item">2023</li>
+          <li class="filter-block__item">2024</li>
+        </ul>
       </div>
-      <div class="filter-block">
-        <span class="filter-name">Saralash</span>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="filter-icon">
-          <path d="M19 9L12.7809 14.3306C12.3316 14.7158 11.6684 14.7158 11.2191 14.3306L5 9" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-        </svg>
+      <div class="filter-select" [ngClass]="{listDown: filterSelect4}">
+        <div class="filter-block" (click)="filterSelect4 = !filterSelect4">
+          <span class="filter-name">Saralash</span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="filter-icon" [ngClass]="{active_icon:filterSelect4}">
+            <path d="M19 9L12.7809 14.3306C12.3316 14.7158 11.6684 14.7158 11.2191 14.3306L5 9" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <ul class="filter-container__list" *ngIf="filterSelect4" @filter>
+          <li class="filter-block__item">asas</li>
+          <li class="filter-block__item">asas</li>
+          <li class="filter-block__item">asas</li>
+        </ul>
       </div>
       <div class="filter-block bg">
         <span class="filter-name">Filterni tozlash</span>
