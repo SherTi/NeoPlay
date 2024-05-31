@@ -1,4 +1,4 @@
-import {Component, HostListener} from '@angular/core';
+import {Component, ElementRef, HostListener, ViewChild} from '@angular/core';
 import {animate, style, transition, trigger} from "@angular/animations";
 
 @Component({
@@ -33,7 +33,9 @@ export class MainLayoutComponent {
   isOpen: boolean = false;
   menu: boolean = false;
   switchLang: boolean = false;
-
+  fList: boolean = false;
+  fList1: boolean = false;
+  fList2 : boolean = false;
 
 
   @HostListener('window:scroll', [])
@@ -45,5 +47,4 @@ export class MainLayoutComponent {
     }
     this.lastScroll = window.scrollY;
   }
-
 }

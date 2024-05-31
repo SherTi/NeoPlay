@@ -240,8 +240,8 @@
         </div>
       </div>
       <div class="f-block">
-        <ul class="f-link-main">
-          <li class="f-link-title">Bo’limlar</li>
+        <ul class="f-link-main" >
+          <li class="f-link-title ">Bo’limlar</li>
           <li class="f-link"><a href="" class="f-link-el">Bosh sahifa</a></li>
           <li class="f-link"><a href="/error" class="f-link-el">Kinoteatr</a></li>
           <li class="f-link"><a href="/error" class="f-link-el">Telekanallar</a></li>
@@ -289,15 +289,15 @@
         </div>
       </div>
       <div class="f-block">
-        <ul class="f-link-main">
-          <li class="f-link-title">
-            <span class="f-text-title">Bo’limlar</span>
-            <div class="f-icon-m">
-              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 15.0732L11.2191 9.74263C11.6684 9.35744 12.3316 9.35744 12.7809 9.74263L19 15.0732" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-              </svg>
-            </div>
-          </li>
+        <div class="f-link-title f-title-btn" (click)="fList = !fList">
+          <span class="f-text-title">Bo’limlar</span>
+          <div class="f-icon-m">
+            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" [ngClass]="{fActive_icon: fList}">
+              <path d="M5 15.0732L11.2191 9.74263C11.6684 9.35744 12.3316 9.35744 12.7809 9.74263L19 15.0732" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+        <ul class="f-link-main" *ngIf="fList">
           <li class="f-link"><a href="" class="f-link-el">Bosh sahifa</a></li>
           <li class="f-link"><a href="/error" class="f-link-el">Kinoteatr</a></li>
           <li class="f-link"><a href="/error" class="f-link-el">Telekanallar</a></li>
@@ -306,15 +306,15 @@
         </ul>
       </div>
       <div class="f-block">
-        <ul class="f-link-main">
-          <li class="f-link-title">
-            <span class="f-text-title">Janrlar</span>
-            <div class="f-icon-m">
-              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 15.0732L11.2191 9.74263C11.6684 9.35744 12.3316 9.35744 12.7809 9.74263L19 15.0732" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-              </svg>
-            </div>
-          </li>
+        <div class="f-link-title" (click)="fList1 = !fList1">
+          <span class="f-text-title">Janrlar</span>
+          <div class="f-icon-m">
+            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" [ngClass]="{fActive_icon: fList1}">
+              <path d="M5 15.0732L11.2191 9.74263C11.6684 9.35744 12.3316 9.35744 12.7809 9.74263L19 15.0732" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+        <ul class="f-link-main" *ngIf="fList1">
           <li class="f-link"><a href="" class="f-link-el">Jangari</a></li>
           <li class="f-link"><a href="" class="f-link-el">Komediya</a></li>
           <li class="f-link"><a href="" class="f-link-el">Drama</a></li>
@@ -322,15 +322,15 @@
         </ul>
       </div>
       <div class="f-block">
-        <ul class="f-link-main">
-          <li class="f-link-title">
-            <span class="f-text-title">Fikr-mulohazalar</span>
-            <div class="f-icon-m">
-              <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 15.0732L11.2191 9.74263C11.6684 9.35744 12.3316 9.35744 12.7809 9.74263L19 15.0732" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-              </svg>
-            </div>
-          </li>
+        <div class="f-link-title" (click)="fList2 = !fList2">
+          <span class="f-text-title">Fikr-mulohazalar</span>
+          <div class="f-icon-m">
+            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" [ngClass]="{fActive_icon:fList2}">
+              <path d="M5 15.0732L11.2191 9.74263C11.6684 9.35744 12.3316 9.35744 12.7809 9.74263L19 15.0732" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+        <ul class="f-link-main" *ngIf="fList2">
           <li class="f-link"><a href="" class="f-link-el">Bosh sahifa</a></li>
           <li class="f-link"><a href="" class="f-link-el">Savollar va javoblar</a></li>
           <li class="f-link"><a href="" class="f-link-el">Kontaktlar</a></li>

@@ -370,6 +370,7 @@
   }
   .m-version{
     display: flex;
+    padding-bottom: 70px;
   }
   .f-link-title{
     display: flex;
@@ -426,5 +427,9 @@
   .m-link-active{
     stroke: #ffffff!important;
     color: #ffffff;
+  }
+  .fActive_icon{
+    transform: rotate(-180deg);
+    transition: all .3s ;
   }
 }
