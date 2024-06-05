@@ -325,6 +325,9 @@
 .pc-none{
   display: none;
 }
+.m-list__profile{
+  display: none;
+}
 @media (max-width: 495px) {
   .h-logo-item{
     display: none;
@@ -431,5 +434,114 @@
   .fActive_icon{
     transform: rotate(-180deg);
     transition: all .3s ;
+  }
+  .m-list__profile{
+    display: flex;
+    border-radius: 32px 32px 0 0;
+    background: #141619;
+    position: fixed;
+    z-index: 101;
+    bottom: 0;
+    width: 100%;
+    flex-direction: column;
+  }
+  .line{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top:10px;
+    position: relative;
+  }
+  .close_icon_block{
+    margin-top: 6px;
+    position: absolute;
+    right: 10px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .close_icon{
+    fill: #919191;
+  }
+  .m-list__profile__container{
+    padding: 42px 12px 32px 12px;
+  }
+  .m-list__profile__title{
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  .m-list__profile_ava__img{
+    width: 36px;
+    height: 36px;
+  }
+  .m-list__profile__list{
+    background: #191B1F;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-radius: 16px;
+    border-bottom: 1px solid transparent;
+    transition: all .3s;
+  }
+  .m-list__profile_text{
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    width: 100%;
+    display: flex;
+  }
+  .m-list__profile__list__el{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 12px;
+  }
+  .list__el{
+    width: auto;
+  }
+  .m-list__profile__list__el__text{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .m-list__profile__list__container{
+    border-radius: 16px;
+    border: 1px solid transparent;
+    transition: all .3s;
+  }
+  .m-list__profile__stetting_container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+  }
+  .m-list__profile__stetting_item{
+    padding: 12px;
+    display: flex;
+    align-items: center;
+  }
+  .m-list__profile__stetting_icon_block{
+    margin-right: 12px;
+  }
+  .m-list__profile__stetting_text{
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  .active__list{
+    border-bottom: 1px solid #919191;
+    border-radius: 16px 16px 0 0;
+  }
+  .active_container{
+    border: 1px solid #919191;
+  }
+  .active_list_icon{
+    transform: rotate(180deg);
   }
 }

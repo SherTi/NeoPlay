@@ -24,6 +24,24 @@ import {animate, style, transition, trigger} from "@angular/animations";
         }))
       ])
     ]),
+    trigger('mList', [
+      transition(':enter', [
+        style({
+          maxHeight: "100%",
+        }),
+        animate("0.2s", style({
+          maxHeight: "0"
+        }))
+      ]),
+      transition(':leave', [
+        style({
+          maxHeight: "0"
+        }),
+        animate("0.2s", style({
+          maxHeight: "100%"
+        }))
+      ])
+    ])
   ]
 })
 export class MainLayoutComponent {
@@ -36,6 +54,7 @@ export class MainLayoutComponent {
   fList: boolean = false;
   fList1: boolean = false;
   fList2 : boolean = false;
+  mList: boolean = false;
 
 
   @HostListener('window:scroll', [])
