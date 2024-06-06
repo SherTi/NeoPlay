@@ -55,6 +55,8 @@ export class MainLayoutComponent {
   fList1: boolean = false;
   fList2 : boolean = false;
   mList: boolean = false;
+  menuList: boolean = false;
+  profileSetting: boolean = false;
 
 
   @HostListener('window:scroll', [])

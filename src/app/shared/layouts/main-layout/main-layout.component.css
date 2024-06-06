@@ -73,8 +73,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 20px;
-  background: #25272A8C;
   position: relative;
 }
 .lang-switch{
@@ -83,16 +81,18 @@
   justify-content: center;
   align-items: center;
   gap: 6px;
+  border-radius: 20px;
+  background: #25272A8C;
   cursor: pointer;
 }
 .other-lang-container{
   position: absolute;
-  top: 45px;
+  top: 44px;
   background: #25272A8C;
-  border-radius: 20px;
+  border-radius: 0 0 20px 20px;
 }
 .other-lang{
-  padding: 10px 30px;
+  padding: 10px 31px;
   cursor: pointer;
   user-select: none;
 }
@@ -220,9 +220,15 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 4px;
+  padding: 4px 12px 4px 4px;
   background: #191B1F;
+  border-radius: 16px;
+}
+.active_m{
   border-radius: 16px 16px 0 0;
+}
+.active_icon_m{
+  transform: rotate(-180deg);
 }
 .menu-list-item{
   display: flex;
@@ -241,6 +247,11 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transform: rotate(180deg);
+  transition: all .3s;
+}
+.l-icon-item{
+  transition: all .3s;
 }
 .menu-list-l{
   padding: 8px;
@@ -327,6 +338,15 @@
 }
 .m-list__profile{
   display: none;
+}
+.active_lang{
+  border-radius: 20px 20px 0 0;
+}
+.lang_icon{
+  transition: all .3s;
+}
+.active_lang_icon{
+  transform: rotate(180deg);
 }
 @media (max-width: 495px) {
   .h-logo-item{
