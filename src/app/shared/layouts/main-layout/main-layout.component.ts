@@ -60,6 +60,11 @@ export class MainLayoutComponent {
   profileSettingMore: boolean = false;
   profileInfo: boolean = false;
   edit: boolean = false;
+  confirmation: boolean = false;
+  safety: boolean = false;
+  fEditL: boolean = false;
+  fEditE: boolean = false;
+  confirmationChange: boolean = false;
 
 
   @HostListener('window:scroll', [])

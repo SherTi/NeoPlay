@@ -597,7 +597,7 @@
     </div>
   </div>
 </div>
-<div class="m-list__profile" *ngIf="profileInfo" [ngClass]="{modalWin:edit}" >
+<div class="m-list__profile" *ngIf="profileInfo" [ngClass]="{modalWin:edit || confirmation}">
   <div class="line">
     <svg width="44" height="4" viewBox="0 0 44 4" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M2 2H42" stroke="#3A3C40" stroke-width="4" stroke-linecap="round"/>
@@ -668,7 +668,7 @@
             <div class="f-round"></div>
           </div>
         </div>
-        <div class="save-btn">O'zgarishlarni saqlash</div>
+        <div class="save-btn" (click)="confirmation = !confirmation">O'zgarishlarni saqlash</div>
       </div>
     </div>
   </div>
@@ -715,5 +715,182 @@
       <img src="/assets/profile.png" alt="" class="photo_img">
     </div>
     <div class="save-btn">O'zgarishlarni saqlash</div>
+  </div>
+</div>
+<div class="m-list__profile" *ngIf="confirmation" [ngClass]="{modalWin:safety}">
+  <div class="line">
+    <svg width="44" height="4" viewBox="0 0 44 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2 2H42" stroke="#3A3C40" stroke-width="4" stroke-linecap="round"/>
+    </svg>
+    <div class="close_icon_block" (click)="confirmation = !confirmation">
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="close_icon">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.99999 7.06049L10.2427 11.3032C10.3842 11.4399 10.5736 11.5155 10.7703 11.5137C10.9669 11.512 11.155 11.4332 11.2941 11.2941C11.4332 11.155 11.512 10.9669 11.5137 10.7703C11.5155 10.5736 11.4399 10.3842 11.3032 10.2427L7.06049 5.99999L11.3032 1.75724C11.4399 1.61579 11.5155 1.42634 11.5137 1.22969C11.512 1.03304 11.4332 0.844932 11.2941 0.705876C11.155 0.56682 10.9669 0.487943 10.7703 0.486234C10.5736 0.484526 10.3842 0.560121 10.2427 0.69674L5.99999 4.93949L1.75724 0.69674C1.61515 0.563499 1.4268 0.490764 1.23204 0.493927C1.03728 0.497089 0.851384 0.575901 0.713697 0.713685C0.57601 0.85147 0.497329 1.03742 0.494304 1.23218C0.49128 1.42695 0.564147 1.61525 0.697489 1.75724L4.93949 5.99999L0.696739 10.2427C0.625107 10.3119 0.56797 10.3947 0.528664 10.4862C0.489357 10.5777 0.468667 10.6761 0.467802 10.7757C0.466936 10.8753 0.485913 10.974 0.523623 11.0662C0.561334 11.1584 0.617024 11.2421 0.687443 11.3125C0.757863 11.383 0.841602 11.4386 0.933774 11.4764C1.02595 11.5141 1.12471 11.533 1.22429 11.5322C1.32387 11.5313 1.42229 11.5106 1.51379 11.4713C1.6053 11.432 1.68805 11.3749 1.75724 11.3032L5.99999 7.06049Z"/>
+      </svg>
+    </div>
+  </div>
+  <div class="m-list__profile__container">
+    <h2 class="m-list__profile__title mar_12">Pin kod yoqish</h2>
+    <p class="m-list__profile__des">Agar qurilmadan bolalar foydalanishi mumkin bo'lsa, himoyani yoqishni tavsiya qilamiz.</p>
+    <div class="pin_code_container">
+      <input type="text" class="pin_code">
+      <input type="text" class="pin_code">
+      <input type="text" class="pin_code">
+      <input type="text" class="pin_code">
+    </div>
+    <div class="save-btn" (click)="safety = !safety">Tasdiqlash</div>
+    <div class="cansel-btn">Bekor qilish</div>
+  </div>
+</div>
+<div class="m-list__profile" *ngIf="safety" [ngClass]="{modalWin: fEditL || fEditE}">
+  <div class="line">
+    <svg width="44" height="4" viewBox="0 0 44 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2 2H42" stroke="#3A3C40" stroke-width="4" stroke-linecap="round"/>
+    </svg>
+    <div class="close_icon_block" (click)="safety = !safety">
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="close_icon">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.99999 7.06049L10.2427 11.3032C10.3842 11.4399 10.5736 11.5155 10.7703 11.5137C10.9669 11.512 11.155 11.4332 11.2941 11.2941C11.4332 11.155 11.512 10.9669 11.5137 10.7703C11.5155 10.5736 11.4399 10.3842 11.3032 10.2427L7.06049 5.99999L11.3032 1.75724C11.4399 1.61579 11.5155 1.42634 11.5137 1.22969C11.512 1.03304 11.4332 0.844932 11.2941 0.705876C11.155 0.56682 10.9669 0.487943 10.7703 0.486234C10.5736 0.484526 10.3842 0.560121 10.2427 0.69674L5.99999 4.93949L1.75724 0.69674C1.61515 0.563499 1.4268 0.490764 1.23204 0.493927C1.03728 0.497089 0.851384 0.575901 0.713697 0.713685C0.57601 0.85147 0.497329 1.03742 0.494304 1.23218C0.49128 1.42695 0.564147 1.61525 0.697489 1.75724L4.93949 5.99999L0.696739 10.2427C0.625107 10.3119 0.56797 10.3947 0.528664 10.4862C0.489357 10.5777 0.468667 10.6761 0.467802 10.7757C0.466936 10.8753 0.485913 10.974 0.523623 11.0662C0.561334 11.1584 0.617024 11.2421 0.687443 11.3125C0.757863 11.383 0.841602 11.4386 0.933774 11.4764C1.02595 11.5141 1.12471 11.533 1.22429 11.5322C1.32387 11.5313 1.42229 11.5106 1.51379 11.4713C1.6053 11.432 1.68805 11.3749 1.75724 11.3032L5.99999 7.06049Z"/>
+      </svg>
+    </div>
+  </div>
+  <div class="m-list__profile__container">
+    <h2 class="m-list__profile__title mar_32">Xavfsizlik ma’lumotlari</h2>
+    <div class="m-list__profile_form_container">
+      <div class="m-list__profile_form_block">
+        <p class="m-list__profile_form_title">Login</p>
+        <div class="m-list__profile_form_set">
+          <div class="m-list__profile_form_input">+998 93 908 70 85</div>
+          <div class="m-list__profile_form_icon" (click)="fEditL = !fEditL">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_92_1062)">
+                <path d="M4 20.0003H8L18.5 9.5003C18.7626 9.23766 18.971 8.92585 19.1131 8.58269C19.2553 8.23953 19.3284 7.87174 19.3284 7.5003C19.3284 7.12887 19.2553 6.76107 19.1131 6.41791C18.971 6.07475 18.7626 5.76295 18.5 5.5003C18.2374 5.23766 17.9256 5.02932 17.5824 4.88718C17.2392 4.74503 16.8714 4.67187 16.5 4.67188C16.1286 4.67188 15.7608 4.74503 15.4176 4.88718C15.0744 5.02932 14.7626 5.23766 14.5 5.5003L4 16.0003V20.0003Z" stroke="#919191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13.5 6.5L17.5 10.5" stroke="#919191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_92_1062">
+                  <rect width="24" height="24" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="m-list__profile_form_block">
+        <p class="m-list__profile_form_title">Email</p>
+        <div class="m-list__profile_form_set">
+          <div class="m-list__profile_form_input">Kiritilmagan</div>
+          <div class="m-list__profile_form_icon" (click)="fEditE = !fEditE">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_92_1062)">
+                <path d="M4 20.0003H8L18.5 9.5003C18.7626 9.23766 18.971 8.92585 19.1131 8.58269C19.2553 8.23953 19.3284 7.87174 19.3284 7.5003C19.3284 7.12887 19.2553 6.76107 19.1131 6.41791C18.971 6.07475 18.7626 5.76295 18.5 5.5003C18.2374 5.23766 17.9256 5.02932 17.5824 4.88718C17.2392 4.74503 16.8714 4.67187 16.5 4.67188C16.1286 4.67188 15.7608 4.74503 15.4176 4.88718C15.0744 5.02932 14.7626 5.23766 14.5 5.5003L4 16.0003V20.0003Z" stroke="#919191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13.5 6.5L17.5 10.5" stroke="#919191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_92_1062">
+                  <rect width="24" height="24" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="m-list__profile_form_block">
+        <p class="m-list__profile_form_title">Parol</p>
+        <div class="m-list__profile_form_set">
+          <div type="password" class="m-list__profile_form_input">*****</div>
+          <div class="m-list__profile_form_icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_92_1062)">
+                <path d="M4 20.0003H8L18.5 9.5003C18.7626 9.23766 18.971 8.92585 19.1131 8.58269C19.2553 8.23953 19.3284 7.87174 19.3284 7.5003C19.3284 7.12887 19.2553 6.76107 19.1131 6.41791C18.971 6.07475 18.7626 5.76295 18.5 5.5003C18.2374 5.23766 17.9256 5.02932 17.5824 4.88718C17.2392 4.74503 16.8714 4.67187 16.5 4.67188C16.1286 4.67188 15.7608 4.74503 15.4176 4.88718C15.0744 5.02932 14.7626 5.23766 14.5 5.5003L4 16.0003V20.0003Z" stroke="#919191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13.5 6.5L17.5 10.5" stroke="#919191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_92_1062">
+                  <rect width="24" height="24" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="save-btn">O'zgarishlarni saqlash</div>
+  </div>
+</div>
+<!---->
+<div class="m-list__profile" *ngIf="fEditL" [ngClass]="{modalWin: confirmationChange}">
+  <div class="line">
+    <svg width="44" height="4" viewBox="0 0 44 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2 2H42" stroke="#3A3C40" stroke-width="4" stroke-linecap="round"/>
+    </svg>
+    <div class="close_icon_block" (click)="fEditL = !fEditL">
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="close_icon">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.99999 7.06049L10.2427 11.3032C10.3842 11.4399 10.5736 11.5155 10.7703 11.5137C10.9669 11.512 11.155 11.4332 11.2941 11.2941C11.4332 11.155 11.512 10.9669 11.5137 10.7703C11.5155 10.5736 11.4399 10.3842 11.3032 10.2427L7.06049 5.99999L11.3032 1.75724C11.4399 1.61579 11.5155 1.42634 11.5137 1.22969C11.512 1.03304 11.4332 0.844932 11.2941 0.705876C11.155 0.56682 10.9669 0.487943 10.7703 0.486234C10.5736 0.484526 10.3842 0.560121 10.2427 0.69674L5.99999 4.93949L1.75724 0.69674C1.61515 0.563499 1.4268 0.490764 1.23204 0.493927C1.03728 0.497089 0.851384 0.575901 0.713697 0.713685C0.57601 0.85147 0.497329 1.03742 0.494304 1.23218C0.49128 1.42695 0.564147 1.61525 0.697489 1.75724L4.93949 5.99999L0.696739 10.2427C0.625107 10.3119 0.56797 10.3947 0.528664 10.4862C0.489357 10.5777 0.468667 10.6761 0.467802 10.7757C0.466936 10.8753 0.485913 10.974 0.523623 11.0662C0.561334 11.1584 0.617024 11.2421 0.687443 11.3125C0.757863 11.383 0.841602 11.4386 0.933774 11.4764C1.02595 11.5141 1.12471 11.533 1.22429 11.5322C1.32387 11.5313 1.42229 11.5106 1.51379 11.4713C1.6053 11.432 1.68805 11.3749 1.75724 11.3032L5.99999 7.06049Z"/>
+      </svg>
+    </div>
+  </div>
+  <div class="m-list__profile__container">
+    <h2 class="m-list__profile__title mar_12">Loginni o’zgartirish</h2>
+    <p class="m-list__profile__des">Akkauntingiz uchun yangi e-mail yoki telefon raqamini kiriting</p>
+    <div class="m-list__profile_form_block">
+      <p class="m-list__profile_form_title mar_top_32 mar_12">E-mail yoki telefon raqam</p>
+      <div class="m-list__profile_form_set">
+        <input type="text" class="m-list__profile_form_input input__font">
+        <span class="error_message">E-mail yoki telefon raqam kiriting!</span>
+      </div>
+    </div>
+    <div class="save-btn" (click)="confirmationChange = !confirmationChange">Tasdiqlash</div>
+    <div class="cansel-btn" (click)="fEditL = !fEditL">Bekor qilish</div>
+  </div>
+</div>
+<div class="m-list__profile" *ngIf="fEditE" [ngClass]="{modalWin: confirmationChange}">
+  <div class="line">
+    <svg width="44" height="4" viewBox="0 0 44 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2 2H42" stroke="#3A3C40" stroke-width="4" stroke-linecap="round"/>
+    </svg>
+    <div class="close_icon_block" (click)="fEditE = !fEditE">
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="close_icon">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.99999 7.06049L10.2427 11.3032C10.3842 11.4399 10.5736 11.5155 10.7703 11.5137C10.9669 11.512 11.155 11.4332 11.2941 11.2941C11.4332 11.155 11.512 10.9669 11.5137 10.7703C11.5155 10.5736 11.4399 10.3842 11.3032 10.2427L7.06049 5.99999L11.3032 1.75724C11.4399 1.61579 11.5155 1.42634 11.5137 1.22969C11.512 1.03304 11.4332 0.844932 11.2941 0.705876C11.155 0.56682 10.9669 0.487943 10.7703 0.486234C10.5736 0.484526 10.3842 0.560121 10.2427 0.69674L5.99999 4.93949L1.75724 0.69674C1.61515 0.563499 1.4268 0.490764 1.23204 0.493927C1.03728 0.497089 0.851384 0.575901 0.713697 0.713685C0.57601 0.85147 0.497329 1.03742 0.494304 1.23218C0.49128 1.42695 0.564147 1.61525 0.697489 1.75724L4.93949 5.99999L0.696739 10.2427C0.625107 10.3119 0.56797 10.3947 0.528664 10.4862C0.489357 10.5777 0.468667 10.6761 0.467802 10.7757C0.466936 10.8753 0.485913 10.974 0.523623 11.0662C0.561334 11.1584 0.617024 11.2421 0.687443 11.3125C0.757863 11.383 0.841602 11.4386 0.933774 11.4764C1.02595 11.5141 1.12471 11.533 1.22429 11.5322C1.32387 11.5313 1.42229 11.5106 1.51379 11.4713C1.6053 11.432 1.68805 11.3749 1.75724 11.3032L5.99999 7.06049Z"/>
+      </svg>
+    </div>
+  </div>
+  <div class="m-list__profile__container">
+    <h2 class="m-list__profile__title mar_12">E-mail kiritish</h2>
+    <p class="m-list__profile__des">Akkauntingiz uchun yangi e-mail yoki telefon raqamini kiriting</p>
+    <div class="m-list__profile_form_block">
+      <p class="m-list__profile_form_title mar_top_32 mar_12">E-mail qo’shish</p>
+      <div class="m-list__profile_form_set">
+        <input type="text" class="m-list__profile_form_input input__font">
+      </div>
+    </div>
+    <div class="save-btn" (click)="confirmationChange = !confirmationChange">Tasdiqlash</div>
+    <div class="cansel-btn" (click)="fEditE = !fEditE">Bekor qilish</div>
+  </div>
+</div>
+<!--"-->
+<div class="m-list__profile" *ngIf="confirmationChange" >
+  <div class="line">
+    <svg width="44" height="4" viewBox="0 0 44 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2 2H42" stroke="#3A3C40" stroke-width="4" stroke-linecap="round"/>
+    </svg>
+    <div class="close_icon_block" (click)="confirmationChange = !confirmationChange">
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="close_icon">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.99999 7.06049L10.2427 11.3032C10.3842 11.4399 10.5736 11.5155 10.7703 11.5137C10.9669 11.512 11.155 11.4332 11.2941 11.2941C11.4332 11.155 11.512 10.9669 11.5137 10.7703C11.5155 10.5736 11.4399 10.3842 11.3032 10.2427L7.06049 5.99999L11.3032 1.75724C11.4399 1.61579 11.5155 1.42634 11.5137 1.22969C11.512 1.03304 11.4332 0.844932 11.2941 0.705876C11.155 0.56682 10.9669 0.487943 10.7703 0.486234C10.5736 0.484526 10.3842 0.560121 10.2427 0.69674L5.99999 4.93949L1.75724 0.69674C1.61515 0.563499 1.4268 0.490764 1.23204 0.493927C1.03728 0.497089 0.851384 0.575901 0.713697 0.713685C0.57601 0.85147 0.497329 1.03742 0.494304 1.23218C0.49128 1.42695 0.564147 1.61525 0.697489 1.75724L4.93949 5.99999L0.696739 10.2427C0.625107 10.3119 0.56797 10.3947 0.528664 10.4862C0.489357 10.5777 0.468667 10.6761 0.467802 10.7757C0.466936 10.8753 0.485913 10.974 0.523623 11.0662C0.561334 11.1584 0.617024 11.2421 0.687443 11.3125C0.757863 11.383 0.841602 11.4386 0.933774 11.4764C1.02595 11.5141 1.12471 11.533 1.22429 11.5322C1.32387 11.5313 1.42229 11.5106 1.51379 11.4713C1.6053 11.432 1.68805 11.3749 1.75724 11.3032L5.99999 7.06049Z"/>
+      </svg>
+    </div>
+  </div>
+  <div class="m-list__profile__container">
+    <h2 class="m-list__profile__title mar_12">O’zgartirishni tasdiqlang</h2>
+    <p class="m-list__profile__des">+99893 *** **63 raqamiga tasdiqlash kodini yubordik, iltimos, maydonlarga ushbu kodni  kiriting</p>
+    <div class="pin_code_container">
+      <input type="text" class="pin_code">
+      <input type="text" class="pin_code">
+      <input type="text" class="pin_code">
+      <input type="text" class="pin_code">
+      <input type="text" class="pin_code">
+      <input type="text" class="pin_code">
+    </div>
+    <div class="save-btn">Tasdiqlash</div>
+    <div class="cansel-btn mar_32">Bekor qilish</div>
+    <span class="time">Siz 59 sekundan dan so'ng kodni qayta so'rashingiz mumkin</span>
   </div>
 </div>
