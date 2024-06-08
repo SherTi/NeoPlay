@@ -67,6 +67,8 @@ export class MainLayoutComponent {
   confirmationChange: boolean = false;
   recovery: boolean = false;
   fEditP: boolean = false;
+  payment: boolean = false;
+  payPlatforms: boolean = false;
 
 
   @HostListener('window:scroll', [])

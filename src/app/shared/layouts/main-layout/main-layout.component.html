@@ -561,7 +561,7 @@
               </defs>
             </svg>
           </div>
-          <p class="m-list__profile__stetting_text">To'lov va balans</p>
+          <p class="m-list__profile__stetting_text" (click)="payment = !payment">To'lov va balans</p>
         </div>
         <div class="m-list__profile__stetting_item">
           <div class="m-list__profile__stetting_icon_block">
@@ -971,5 +971,150 @@
     </div>
     <div class="save-btn" (click)="confirmationChange = !confirmationChange">Tasdiqlash</div>
     <div class="cansel-btn" (click)="fEditP = !fEditP">Bekor qilish</div>
+  </div>
+</div>
+
+
+<div class="m-list__profile" *ngIf="payment" [ngClass]="{modalWin: payPlatforms}">
+  <div class="line">
+    <svg width="44" height="4" viewBox="0 0 44 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2 2H42" stroke="#3A3C40" stroke-width="4" stroke-linecap="round"/>
+    </svg>
+    <div class="close_icon_block" (click)="payment = !payment">
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="close_icon">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.99999 7.06049L10.2427 11.3032C10.3842 11.4399 10.5736 11.5155 10.7703 11.5137C10.9669 11.512 11.155 11.4332 11.2941 11.2941C11.4332 11.155 11.512 10.9669 11.5137 10.7703C11.5155 10.5736 11.4399 10.3842 11.3032 10.2427L7.06049 5.99999L11.3032 1.75724C11.4399 1.61579 11.5155 1.42634 11.5137 1.22969C11.512 1.03304 11.4332 0.844932 11.2941 0.705876C11.155 0.56682 10.9669 0.487943 10.7703 0.486234C10.5736 0.484526 10.3842 0.560121 10.2427 0.69674L5.99999 4.93949L1.75724 0.69674C1.61515 0.563499 1.4268 0.490764 1.23204 0.493927C1.03728 0.497089 0.851384 0.575901 0.713697 0.713685C0.57601 0.85147 0.497329 1.03742 0.494304 1.23218C0.49128 1.42695 0.564147 1.61525 0.697489 1.75724L4.93949 5.99999L0.696739 10.2427C0.625107 10.3119 0.56797 10.3947 0.528664 10.4862C0.489357 10.5777 0.468667 10.6761 0.467802 10.7757C0.466936 10.8753 0.485913 10.974 0.523623 11.0662C0.561334 11.1584 0.617024 11.2421 0.687443 11.3125C0.757863 11.383 0.841602 11.4386 0.933774 11.4764C1.02595 11.5141 1.12471 11.533 1.22429 11.5322C1.32387 11.5313 1.42229 11.5106 1.51379 11.4713C1.6053 11.432 1.68805 11.3749 1.75724 11.3032L5.99999 7.06049Z"/>
+      </svg>
+    </div>
+  </div>
+  <div class="m-list__profile__container">
+    <h2 class="m-list__profile__title mar_24">To’lov va balans</h2>
+    <div class="p-block mar_32">
+      <div class="form-b mar_24">
+        <p class="form-title">Koshelok raqami:</p>
+        <div class="form-in-block">
+          <input class="form-item" placeholder="022299">
+          <div class="icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_158_36012)">
+                <path d="M7 9.667C7 8.95967 7.28099 8.28131 7.78115 7.78115C8.28131 7.28099 8.95967 7 9.667 7H18.333C18.6832 7 19.03 7.06898 19.3536 7.20301C19.6772 7.33704 19.9712 7.53349 20.2189 7.78115C20.4665 8.0288 20.663 8.32281 20.797 8.64638C20.931 8.96996 21 9.31676 21 9.667V18.333C21 18.6832 20.931 19.03 20.797 19.3536C20.663 19.6772 20.4665 19.9712 20.2189 20.2189C19.9712 20.4665 19.6772 20.663 19.3536 20.797C19.03 20.931 18.6832 21 18.333 21H9.667C9.31676 21 8.96996 20.931 8.64638 20.797C8.32281 20.663 8.0288 20.4665 7.78115 20.2189C7.53349 19.9712 7.33704 19.6772 7.20301 19.3536C7.06898 19.03 7 18.6832 7 18.333V9.667Z" stroke="#919191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M4.012 16.737C3.70534 16.5622 3.45027 16.3095 3.27258 16.0045C3.09488 15.6995 3.00085 15.353 3 15V5C3 3.9 3.9 3 5 3H15C15.75 3 16.158 3.385 16.5 4" stroke="#919191" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_158_36012">
+                  <rect width="24" height="24" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="form-b mar_24">
+        <p class="form-title">Sizning balansingiz:</p>
+        <div class="form-in-block">
+          <input class="form-item money" placeholder="30,000 so'm">
+        </div>
+      </div>
+      <div class="btn then" (click)="payPlatforms = !payPlatforms">Balansni to'ldirish</div>
+    </div>
+    <div class="p-block">
+      <p class="title-p">To’lovlar tarixi</p>
+      <div class="p-history">
+        <ul class="p-h-items">
+          <li class="p-h-title">
+            <span class="p-h-title-text">To’lov sanasi</span>
+          </li>
+          <li class="p-h-item">
+            <span class="p-h-item-text">22-fev. 2024, 23:09</span>
+          </li>
+          <li class="p-h-item">
+            <span class="p-h-item-text">22-fev. 2024, 23:09</span>
+          </li>
+          <li class="p-h-item">
+            <span class="p-h-item-text">22-fev. 2024, 23:09</span>
+          </li>
+          <li class="p-h-item">
+            <span class="p-h-item-text">22-fev. 2024, 23:09</span>
+          </li>
+        </ul>
+        <ul class="p-h-items">
+          <li class="p-h-title">
+            <span class="p-h-title-text">To’lov summasi</span>
+          </li>
+          <li class="p-h-item">
+            <span class="p-h-item-text">32,000 so’m</span>
+          </li>
+          <li class="p-h-item">
+            <span class="p-h-item-text">32,000 so’m</span>
+          </li>
+          <li class="p-h-item">
+            <span class="p-h-item-text">32,000 so’m</span>
+          </li>
+          <li class="p-h-item">
+            <span class="p-h-item-text">32,000 so’m</span>
+          </li>
+        </ul>
+      </div>
+      <div class="btn mar_top_16 ">Barchsini ko'rish</div>
+    </div>
+  </div>
+</div>
+
+<div class="m-list__profile" *ngIf="payPlatforms">
+  <div class="line">
+    <svg width="44" height="4" viewBox="0 0 44 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2 2H42" stroke="#3A3C40" stroke-width="4" stroke-linecap="round"/>
+    </svg>
+    <div class="close_icon_block" (click)="payPlatforms = !payPlatforms">
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="close_icon">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.99999 7.06049L10.2427 11.3032C10.3842 11.4399 10.5736 11.5155 10.7703 11.5137C10.9669 11.512 11.155 11.4332 11.2941 11.2941C11.4332 11.155 11.512 10.9669 11.5137 10.7703C11.5155 10.5736 11.4399 10.3842 11.3032 10.2427L7.06049 5.99999L11.3032 1.75724C11.4399 1.61579 11.5155 1.42634 11.5137 1.22969C11.512 1.03304 11.4332 0.844932 11.2941 0.705876C11.155 0.56682 10.9669 0.487943 10.7703 0.486234C10.5736 0.484526 10.3842 0.560121 10.2427 0.69674L5.99999 4.93949L1.75724 0.69674C1.61515 0.563499 1.4268 0.490764 1.23204 0.493927C1.03728 0.497089 0.851384 0.575901 0.713697 0.713685C0.57601 0.85147 0.497329 1.03742 0.494304 1.23218C0.49128 1.42695 0.564147 1.61525 0.697489 1.75724L4.93949 5.99999L0.696739 10.2427C0.625107 10.3119 0.56797 10.3947 0.528664 10.4862C0.489357 10.5777 0.468667 10.6761 0.467802 10.7757C0.466936 10.8753 0.485913 10.974 0.523623 11.0662C0.561334 11.1584 0.617024 11.2421 0.687443 11.3125C0.757863 11.383 0.841602 11.4386 0.933774 11.4764C1.02595 11.5141 1.12471 11.533 1.22429 11.5322C1.32387 11.5313 1.42229 11.5106 1.51379 11.4713C1.6053 11.432 1.68805 11.3749 1.75724 11.3032L5.99999 7.06049Z"/>
+      </svg>
+    </div>
+  </div>
+  <div class="m-list__profile__container">
+    <h2 class="m-list__profile__title mar_24">Balansni to’ldirish</h2>
+    <div class="p-p-c">
+      <div class="pay-switch">
+        <div class="p-link">
+          <div class="pay-s-item" [ngClass]="{activeLink: payPlatforms}">
+            <div class="pay-item" [ngClass]="{activeInput: payPlatforms}">
+              <img src="/assets/click.png" alt="" class="pay-i-img">
+            </div>
+            <div class="cost-block" [ngClass]="{'active-link-cost': payPlatforms}">
+              <span class="cost-title">Summa kiriting</span>
+              <input type="text" class="cost-input" placeholder="30000">
+            </div>
+          </div>
+        </div>
+        <div class="p-link">
+          <div class="pay-s-item">
+            <div class="pay-item">
+              <img src="/assets/payMe.png" alt="" class="pay-i-img">
+            </div>
+            <div class="cost-block">
+              <span class="cost-title">Summa kiriting</span>
+              <input type="text" class="cost-input" placeholder="30000">
+            </div>
+          </div>
+        </div>
+        <div class="pay-item" [ngClass]="{'active-l': payPlatforms}">
+          <img src="/assets/uzcard_humo_master_visa.png" alt="" class="pay-i-img">
+        </div>
+        <div class="pay-item p-f-b" [ngClass]="{'active-l': payPlatforms}">
+          <img src="/assets/flus.png" alt="" class="pay-i-img">
+          <span class="pay-d-t">Karta qo’shish</span>
+        </div>
+        <div class="pay-item p-f-b" [ngClass]="{'active-l': payPlatforms}">
+          <img src="/assets/save-card.png" alt="" class="pay-i-img">
+          <div class="card-save">
+            <span class="pay-d-t">Saqlangan kartadan to’lash</span>
+            <span class="pay-d-t-des">8600 **** **** 7202 07/24</span>
+          </div>
+        </div>
+      </div>
+      <div class="pay-item__btn_set">
+        <div class="pay-item__btn">Bekor qilish</div>
+        <div class="pay-item__btn">Davom etish</div>
+      </div>
+    </div>
   </div>
 </div>
