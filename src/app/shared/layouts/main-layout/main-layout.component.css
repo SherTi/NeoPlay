@@ -813,4 +813,11 @@
     display: flex;
     text-align: center;
   }
+  .recovery_password_text{
+    font-size: 16px;
+    font-weight: 400;
+    color: #77BC41;
+    text-align: right;
+    margin-top: 10px;
+  }
 }

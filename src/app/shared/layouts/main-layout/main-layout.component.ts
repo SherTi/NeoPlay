@@ -65,6 +65,8 @@ export class MainLayoutComponent {
   fEditL: boolean = false;
   fEditE: boolean = false;
   confirmationChange: boolean = false;
+  recovery: boolean = false;
+  fEditP: boolean = false;
 
 
   @HostListener('window:scroll', [])
