@@ -500,7 +500,7 @@
     </div>
   </div>
 </div>
-<div class="m-list__profile" *ngIf="profileSettingMore" [ngClass]="{modalWin:safety}" >
+<div class="m-list__profile" *ngIf="profileSettingMore" [ngClass]="{modalWin:safety || deleteCard || addCard || saveCards || payPlatforms}" >
   <div class="container">
     <div class="line">
       <svg width="44" height="4" viewBox="0 0 44 4" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1059,7 +1059,7 @@
   </div>
 </div>
 
-<div class="m-list__profile" *ngIf="payPlatforms">
+<div class="m-list__profile" *ngIf="payPlatforms" [ngClass]="{modalWin:saveCards || addCard}">
   <div class="line">
     <svg width="44" height="4" viewBox="0 0 44 4" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M2 2H42" stroke="#3A3C40" stroke-width="4" stroke-linecap="round"/>
@@ -1077,7 +1077,7 @@
         <div class="p-link">
           <div class="pay-s-item" [ngClass]="{activeLink: payPlatforms}">
             <div class="pay-item" [ngClass]="{activeInput: payPlatforms}">
-              <img src="/assets/click.png" alt="" class="pay-i-img">
+              <img src="/assets/click.png" alt="" class="pay-i-img click">
             </div>
             <div class="cost-block" [ngClass]="{'active-link-cost': payPlatforms}">
               <span class="cost-title">Summa kiriting</span>
@@ -1088,7 +1088,7 @@
         <div class="p-link">
           <div class="pay-s-item">
             <div class="pay-item">
-              <img src="/assets/payMe.png" alt="" class="pay-i-img">
+              <img src="/assets/payMe.png" alt="" class="pay-i-img payme">
             </div>
             <div class="cost-block">
               <span class="cost-title">Summa kiriting</span>
@@ -1099,22 +1099,125 @@
         <div class="pay-item" [ngClass]="{'active-l': payPlatforms}">
           <img src="/assets/uzcard_humo_master_visa.png" alt="" class="pay-i-img">
         </div>
-        <div class="pay-item p-f-b" [ngClass]="{'active-l': payPlatforms}">
-          <img src="/assets/flus.png" alt="" class="pay-i-img">
-          <span class="pay-d-t">Karta qo’shish</span>
-        </div>
-        <div class="pay-item p-f-b" [ngClass]="{'active-l': payPlatforms}">
+        <div class="pay-item p-f-b" [ngClass]="{'active-l': payPlatforms}" (click)="saveCards = !saveCards">
           <img src="/assets/save-card.png" alt="" class="pay-i-img">
           <div class="card-save">
             <span class="pay-d-t">Saqlangan kartadan to’lash</span>
             <span class="pay-d-t-des">8600 **** **** 7202 07/24</span>
           </div>
         </div>
+        <div class="pay-item p-f-b" [ngClass]="{'active-l': payPlatforms}" (click)="addCard = !addCard">
+          <img src="/assets/flus.png" alt="" class="pay-i-img">
+          <span class="pay-d-t">Karta qo’shish</span>
+        </div>
       </div>
       <div class="pay-item__btn_set">
         <div class="pay-item__btn">Bekor qilish</div>
         <div class="pay-item__btn">Davom etish</div>
       </div>
+    </div>
+  </div>
+</div>
+<!---->
+<div class="m-list__profile" *ngIf="addCard">
+  <div class="line">
+    <svg width="44" height="4" viewBox="0 0 44 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2 2H42" stroke="#3A3C40" stroke-width="4" stroke-linecap="round"/>
+    </svg>
+    <div class="close_icon_block" (click)="addCard = !addCard">
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="close_icon">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.99999 7.06049L10.2427 11.3032C10.3842 11.4399 10.5736 11.5155 10.7703 11.5137C10.9669 11.512 11.155 11.4332 11.2941 11.2941C11.4332 11.155 11.512 10.9669 11.5137 10.7703C11.5155 10.5736 11.4399 10.3842 11.3032 10.2427L7.06049 5.99999L11.3032 1.75724C11.4399 1.61579 11.5155 1.42634 11.5137 1.22969C11.512 1.03304 11.4332 0.844932 11.2941 0.705876C11.155 0.56682 10.9669 0.487943 10.7703 0.486234C10.5736 0.484526 10.3842 0.560121 10.2427 0.69674L5.99999 4.93949L1.75724 0.69674C1.61515 0.563499 1.4268 0.490764 1.23204 0.493927C1.03728 0.497089 0.851384 0.575901 0.713697 0.713685C0.57601 0.85147 0.497329 1.03742 0.494304 1.23218C0.49128 1.42695 0.564147 1.61525 0.697489 1.75724L4.93949 5.99999L0.696739 10.2427C0.625107 10.3119 0.56797 10.3947 0.528664 10.4862C0.489357 10.5777 0.468667 10.6761 0.467802 10.7757C0.466936 10.8753 0.485913 10.974 0.523623 11.0662C0.561334 11.1584 0.617024 11.2421 0.687443 11.3125C0.757863 11.383 0.841602 11.4386 0.933774 11.4764C1.02595 11.5141 1.12471 11.533 1.22429 11.5322C1.32387 11.5313 1.42229 11.5106 1.51379 11.4713C1.6053 11.432 1.68805 11.3749 1.75724 11.3032L5.99999 7.06049Z"/>
+      </svg>
+    </div>
+  </div>
+  <div class="m-list__profile__container">
+    <h2 class="m-list__profile__title mar_24">Karta qo’shish</h2>
+    <div class="card-container">
+      <div class="c-form">
+        <span class="c-f-title">Karta raqami</span>
+        <input type="text" class="c-f-input" placeholder="8600 **** **** 7202">
+      </div>
+      <div class="c-form">
+        <span class="c-f-title">Tugash muddati</span>
+        <input type="text" class="c-f-input" placeholder="07/24">
+      </div>
+      <div class="c-f-check">
+        <div class="c-f-item">
+          <input type="checkbox" class="c-f-check-item">
+        </div>
+        <span class="c-f-text">Kartani eslab qolish</span>
+      </div>
+      <div class="pay-item__btn_set addCard__flex">
+        <div class="pay-item__btn">Qo'shish</div>
+        <div class="pay-item__btn">Bekor qilish</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="m-list__profile" *ngIf="saveCards" [ngClass]="{modalWin: deleteCard}">
+  <div class="line">
+    <svg width="44" height="4" viewBox="0 0 44 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2 2H42" stroke="#3A3C40" stroke-width="4" stroke-linecap="round"/>
+    </svg>
+    <div class="close_icon_block" (click)="saveCards = !saveCards">
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="close_icon">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.99999 7.06049L10.2427 11.3032C10.3842 11.4399 10.5736 11.5155 10.7703 11.5137C10.9669 11.512 11.155 11.4332 11.2941 11.2941C11.4332 11.155 11.512 10.9669 11.5137 10.7703C11.5155 10.5736 11.4399 10.3842 11.3032 10.2427L7.06049 5.99999L11.3032 1.75724C11.4399 1.61579 11.5155 1.42634 11.5137 1.22969C11.512 1.03304 11.4332 0.844932 11.2941 0.705876C11.155 0.56682 10.9669 0.487943 10.7703 0.486234C10.5736 0.484526 10.3842 0.560121 10.2427 0.69674L5.99999 4.93949L1.75724 0.69674C1.61515 0.563499 1.4268 0.490764 1.23204 0.493927C1.03728 0.497089 0.851384 0.575901 0.713697 0.713685C0.57601 0.85147 0.497329 1.03742 0.494304 1.23218C0.49128 1.42695 0.564147 1.61525 0.697489 1.75724L4.93949 5.99999L0.696739 10.2427C0.625107 10.3119 0.56797 10.3947 0.528664 10.4862C0.489357 10.5777 0.468667 10.6761 0.467802 10.7757C0.466936 10.8753 0.485913 10.974 0.523623 11.0662C0.561334 11.1584 0.617024 11.2421 0.687443 11.3125C0.757863 11.383 0.841602 11.4386 0.933774 11.4764C1.02595 11.5141 1.12471 11.533 1.22429 11.5322C1.32387 11.5313 1.42229 11.5106 1.51379 11.4713C1.6053 11.432 1.68805 11.3749 1.75724 11.3032L5.99999 7.06049Z"/>
+      </svg>
+    </div>
+  </div>
+  <div class="m-list__profile__container">
+    <h2 class="m-list__profile__title mar_24">Saqlangan karta</h2>
+    <div class="card">
+      <div class="card-des">
+        <span class="card-number">8600 **** **** 7202</span>
+        <span class="card-number">07/24</span>
+      </div>
+      <div class="round-icon" (click)="deleteCard = !deleteCard">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_158_38012)">
+            <path d="M4 7H20" stroke="#EA4335" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M5 7L6 19C6 19.5304 6.21071 20.0391 6.58579 20.4142C6.96086 20.7893 7.46957 21 8 21H16C16.5304 21 17.0391 20.7893 17.4142 20.4142C17.7893 20.0391 18 19.5304 18 19L19 7" stroke="#EA4335" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M9 7V4C9 3.73478 9.10536 3.48043 9.29289 3.29289C9.48043 3.10536 9.73478 3 10 3H14C14.2652 3 14.5196 3.10536 14.7071 3.29289C14.8946 3.48043 15 3.73478 15 4V7" stroke="#EA4335" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10 12L14 16M14 12L10 16" stroke="#EA4335" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          <defs>
+            <clipPath id="clip0_158_38012">
+              <rect width="24" height="24" fill="white"/>
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+    </div>
+    <div class="pay-item p-f-b" [ngClass]="{'active-l': payPlatforms}" (click)="addCard = !addCard">
+      <img src="/assets/flus.png" alt="" class="pay-i-img">
+      <span class="pay-d-t">Boshqa karta qo’shish</span>
+    </div>
+    <div class="pay-item__btn_set">
+      <div class="pay-item__btn">Bekor qilish</div>
+      <div class="pay-item__btn">Saqlash</div>
+    </div>
+  </div>
+</div>
+<div class="m-list__profile" *ngIf="deleteCard">
+  <div class="line">
+    <svg width="44" height="4" viewBox="0 0 44 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2 2H42" stroke="#3A3C40" stroke-width="4" stroke-linecap="round"/>
+    </svg>
+    <div class="close_icon_block" (click)="deleteCard = !deleteCard">
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="close_icon">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.99999 7.06049L10.2427 11.3032C10.3842 11.4399 10.5736 11.5155 10.7703 11.5137C10.9669 11.512 11.155 11.4332 11.2941 11.2941C11.4332 11.155 11.512 10.9669 11.5137 10.7703C11.5155 10.5736 11.4399 10.3842 11.3032 10.2427L7.06049 5.99999L11.3032 1.75724C11.4399 1.61579 11.5155 1.42634 11.5137 1.22969C11.512 1.03304 11.4332 0.844932 11.2941 0.705876C11.155 0.56682 10.9669 0.487943 10.7703 0.486234C10.5736 0.484526 10.3842 0.560121 10.2427 0.69674L5.99999 4.93949L1.75724 0.69674C1.61515 0.563499 1.4268 0.490764 1.23204 0.493927C1.03728 0.497089 0.851384 0.575901 0.713697 0.713685C0.57601 0.85147 0.497329 1.03742 0.494304 1.23218C0.49128 1.42695 0.564147 1.61525 0.697489 1.75724L4.93949 5.99999L0.696739 10.2427C0.625107 10.3119 0.56797 10.3947 0.528664 10.4862C0.489357 10.5777 0.468667 10.6761 0.467802 10.7757C0.466936 10.8753 0.485913 10.974 0.523623 11.0662C0.561334 11.1584 0.617024 11.2421 0.687443 11.3125C0.757863 11.383 0.841602 11.4386 0.933774 11.4764C1.02595 11.5141 1.12471 11.533 1.22429 11.5322C1.32387 11.5313 1.42229 11.5106 1.51379 11.4713C1.6053 11.432 1.68805 11.3749 1.75724 11.3032L5.99999 7.06049Z"/>
+      </svg>
+    </div>
+  </div>
+  <div class="m-list__profile__container">
+    <h2 class="m-list__profile__title mar_24">Saqlangan ... **** 7202 kartani o’chirmoqchimisiz?</h2>
+    <div class="cardInfo">
+      <span class="cardInfo__text">8600 **** **** 7202</span>
+      <span class="cardInfo__text">07/24</span>
+    </div>
+    <div class="pay-item__btn_set">
+      <div class="pay-item__btn">Bekor qilish</div>
+      <div class="pay-item__btn">Kartani o’chirish</div>
     </div>
   </div>
 </div>

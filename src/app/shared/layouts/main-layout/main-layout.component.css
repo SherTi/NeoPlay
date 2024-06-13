@@ -919,7 +919,7 @@
     padding: 20px;
     border-radius: 24px;
     border: 1px solid  #3A3C40;
-    background: #141619;
+    background: #25272A;
     transition: all .3s;
   }
   .cost-block{
@@ -1000,5 +1000,139 @@
     font-size: 18px;
     font-weight: 500;
     color: #ffffff;
+  }
+  .click{
+    width: 88px;
+    object-fit: contain;
+  }
+  .payme{
+    width: 92px;
+    object-fit: contain;
+  }
+
+
+
+  .card-container{
+    border-radius: 20px;
+    width: 100%;
+  }
+  .c-title{
+    font-size: 24px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 24px;
+  }
+  .c-form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  .c-f-title{
+    font-size: 16px;
+    color: #919191;
+    font-weight: 400;
+  }
+  .c-f-input{
+    background: #191B1F;
+    border-radius: 20px;
+    padding: 14px 16px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  .c-f-check{
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  .c-f-text{
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  .btn{
+    border-radius: 50px;
+    padding: 14px 32px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    background: linear-gradient(98.42deg, #5E9B2F 11.48%, #77BC41 93.21%);
+  }
+  .c-f-item{
+    position: relative;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  .c-f-check-item{
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    background: #77BC41;
+    appearance: none;
+    cursor: pointer;
+  }
+  .c-f-check-item::after {
+    box-sizing: border-box;
+    content: url("/assets/check.png");
+    position: absolute;
+    font-size: 10px;
+    color: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .c-f-check-item:checked::after{
+    display: none;
+  }
+  .addCard__flex{
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .card{
+    border-radius: 20px;
+    background: #25272A;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+  .card-des{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .card-number{
+    font-weight: 400;
+    font-size: 16px;
+    color: #D3D3D4;
+  }
+  .round-icon{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #25272A;
+    cursor: pointer;
+  }
+  .cardInfo{
+    background: #0D0E10;
+    border-radius: 20px;
+    opacity: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 4px;
+  }
+  .cardInfo__text{
+    font-size: 16px;
+    font-weight: 400;
+    color: #D3D3D4;
   }
 }

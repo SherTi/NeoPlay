@@ -69,6 +69,9 @@ export class MainLayoutComponent {
   fEditP: boolean = false;
   payment: boolean = false;
   payPlatforms: boolean = false;
+  addCard: boolean = false;
+  saveCards: boolean = false;
+  deleteCard: boolean = false;
 
 
   @HostListener('window:scroll', [])
