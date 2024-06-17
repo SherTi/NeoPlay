@@ -1288,7 +1288,7 @@
 
 
 <!--Subscribe pages-->
-<div class="m-list__profile" *ngIf="sub">
+<div class="m-list__profile" *ngIf="sub" [ngClass]="{modalWin: payPlatforms}">
   <div class="container">
     <div class="line">
       <svg width="44" height="4" viewBox="0 0 44 4" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1348,7 +1348,7 @@
               </div>
               <p class="s-check-text">Shartnoma shartlariga roziman</p>
             </div>
-            <div class="s-buy-btn bg-g">Obunani 21,890 so’mga sotib olish</div>
+            <div class="s-buy-btn bg-g" (click)="payPlatforms = !payPlatforms">Obunani 21,890 so’mga sotib olish</div>
           </div>
         </div>
         <div class="sub-b">
@@ -1405,7 +1405,7 @@
               </div>
               <p class="s-check-text">Shartnoma shartlariga roziman</p>
             </div>
-            <div class="s-buy-btn bg-g">Obunani 9,991 so’mga sotib olish</div>
+            <div class="s-buy-btn bg-g" (click)="payPlatforms = !payPlatforms">Obunani 9,991 so’mga sotib olish</div>
           </div>
         </div>
         <div class="sub-b">
@@ -1453,7 +1453,7 @@
               </div>
               <p class="s-check-text">Shartnoma shartlariga roziman</p>
             </div>
-            <div class="s-buy-btn bg-g">Obunani 21,890 so’mga sotib olish</div>
+            <div class="s-buy-btn bg-g" (click)="payPlatforms = !payPlatforms">Obunani 21,890 so’mga sotib olish</div>
           </div>
         </div>
       </div>
