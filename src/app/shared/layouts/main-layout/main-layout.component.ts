@@ -72,6 +72,9 @@ export class MainLayoutComponent {
   addCard: boolean = false;
   saveCards: boolean = false;
   deleteCard: boolean = false;
+  devices: boolean = false;
+  deactivation: boolean = false;
+  sub: boolean = false;
 
 
   @HostListener('window:scroll', [])

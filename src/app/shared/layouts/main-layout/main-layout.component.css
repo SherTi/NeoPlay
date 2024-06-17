@@ -464,6 +464,12 @@
     bottom: 0;
     width: 100%;
     flex-direction: column;
+    max-height: 100vh;
+    overflow-y: scroll;
+  }
+  .m-list__profile::-webkit-scrollbar-thumb{
+    background: #141619;
+    width: 3px;
   }
   .line{
     width: 100%;
@@ -1134,5 +1140,206 @@
     font-size: 16px;
     font-weight: 400;
     color: #D3D3D4;
+  }
+
+  .devices__info__container{
+    border-top: 1px solid #3A3C40;
+  }
+  .devices__container__title{
+    font-size: 14px;
+    font-weight: 400;
+    color: #919191;
+    margin-bottom: 16px;
+  }
+  .devices__info__block{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid #3A3C40;
+  }
+  .devices__info{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 50%;
+  }
+  .devices__name{
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 500;
+  }
+  .devices__date{
+    font-size: 12px;
+    color: #919191;
+    font-weight: 400;
+  }
+  .devices__deactivation{
+    display: flex;
+    background: #A52626;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 0;
+    width: 50%;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  .dd_btn{
+    margin-top: 16px;
+    width: 100%;
+  }
+  .devices__info_deactivation{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 40px;
+  }
+  .devices__info__text{
+    font-size: 16px;
+    font-weight: 400;
+    color: #D3D3D4;
+  }
+  .d_color{
+    color: #919191;
+  }
+  .r_color{
+    background: #A52626;
+  }
+
+
+
+  .sub-b{
+    width: 100%;
+    border-radius: 50px;
+    background: #25272A;
+    padding: 24px 16px 24px 16px;
+  }
+  .s-title-b{
+    border-radius: 50px 50px 0 0;
+    margin-bottom: 16px;
+  }
+  .s-title-text{
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 500;
+    text-align: left;
+  }
+  .s-body-des{
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 24px;
+  }
+  .s-body-text-block{
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0;
+    gap: 20px;
+  }
+  .s-price-block{
+    display: flex;
+    flex-direction: column;
+  }
+  .s-p-title{
+    font-size: 14px;
+    font-weight: 400;
+    color: #D5D5E1;
+    margin-bottom: 6px;
+  }
+  .s-p-body{
+    font-size: 24px;
+    font-weight: 500;
+    color: #8CD851;
+  }
+  .s-check-b-item{
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    border: 1px solid #919191;
+    appearance: none;
+    cursor: pointer;
+  }
+  .s-check-b-item::after {
+    box-sizing: border-box;
+    content: url("/assets/check.png");
+    position: absolute;
+    font-size: 10px;
+    color: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+  }
+  .s-check-b-item:checked::after{
+    display: block;
+  }
+  .s-check-b-item:checked{
+    background: #77BC41;
+    border: none;
+  }
+  .s-check-b{
+    position: relative;
+    cursor: pointer;
+    margin-right: 8px;
+  }
+  .s-check{
+    display: flex;
+    align-items: center;
+    padding: 4px;
+  }
+  .mar-t{
+    margin-top: 16px;
+  }
+  .s-check-text{
+    font-size: 16px;
+    color: #919191;
+    font-weight: 400;
+  }
+  .s-buy-btn{
+    background: #25272A;
+    border-radius: 50px;
+    padding: 16px 24px;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 24px;
+    cursor: pointer;
+  }
+  .bg-g{
+    background: linear-gradient(98.42deg, #5E9B2F 11.48%, #77BC41 93.21%);
+  }
+  .s-container-check{
+    margin: 24px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+  }
+  .s-b-body-text{
+    font-size: 16px;
+    font-weight: 400;
+    color: #D5D5E1;
+  }
+  .s-b-title-b{
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  .s-b-t-title{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+  }
+  .g-color{
+    color: #92DF56;
+  }
+  .sub_container{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
   }
 }

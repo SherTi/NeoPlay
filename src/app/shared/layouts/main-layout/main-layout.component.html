@@ -341,7 +341,7 @@
     </div>
   </div>
 </footer>
-<div class="m-list__profile" *ngIf="profileSetting" [ngClass]="{modalWin: profileSettingMore}">
+<div class="m-list__profile" *ngIf="profileSetting" [ngClass]="{modalWin: profileSettingMore || sub}">
   <div class="container">
     <div class="line">
       <svg width="44" height="4" viewBox="0 0 44 4" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -454,7 +454,7 @@
           </div>
           <p class="m-list__profile__stetting_text">Tanlangan filmlar</p>
         </div>
-        <div class="m-list__profile__stetting_item">
+        <div class="m-list__profile__stetting_item" (click)="sub = !sub">
           <div class="m-list__profile__stetting_icon_block">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_1_66905)">
@@ -500,7 +500,7 @@
     </div>
   </div>
 </div>
-<div class="m-list__profile" *ngIf="profileSettingMore" [ngClass]="{modalWin:safety || deleteCard || addCard || saveCards || payPlatforms}" >
+<div class="m-list__profile" *ngIf="profileSettingMore" [ngClass]="{modalWin: profileInfo ||safety || deleteCard || addCard || saveCards || payPlatforms || devices}" >
   <div class="container">
     <div class="line">
       <svg width="44" height="4" viewBox="0 0 44 4" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -563,7 +563,7 @@
           </div>
           <p class="m-list__profile__stetting_text" (click)="payment = !payment">To'lov va balans</p>
         </div>
-        <div class="m-list__profile__stetting_item">
+        <div class="m-list__profile__stetting_item" (click)="devices = !devices">
           <div class="m-list__profile__stetting_icon_block">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_1_66976)">
@@ -1221,3 +1221,243 @@
     </div>
   </div>
 </div>
+
+<div class="m-list__profile" *ngIf="devices" [ngClass]="{modalWin: deactivation}">
+  <div class="line">
+    <svg width="44" height="4" viewBox="0 0 44 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2 2H42" stroke="#3A3C40" stroke-width="4" stroke-linecap="round"/>
+    </svg>
+    <div class="close_icon_block" (click)="devices = !devices">
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="close_icon">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.99999 7.06049L10.2427 11.3032C10.3842 11.4399 10.5736 11.5155 10.7703 11.5137C10.9669 11.512 11.155 11.4332 11.2941 11.2941C11.4332 11.155 11.512 10.9669 11.5137 10.7703C11.5155 10.5736 11.4399 10.3842 11.3032 10.2427L7.06049 5.99999L11.3032 1.75724C11.4399 1.61579 11.5155 1.42634 11.5137 1.22969C11.512 1.03304 11.4332 0.844932 11.2941 0.705876C11.155 0.56682 10.9669 0.487943 10.7703 0.486234C10.5736 0.484526 10.3842 0.560121 10.2427 0.69674L5.99999 4.93949L1.75724 0.69674C1.61515 0.563499 1.4268 0.490764 1.23204 0.493927C1.03728 0.497089 0.851384 0.575901 0.713697 0.713685C0.57601 0.85147 0.497329 1.03742 0.494304 1.23218C0.49128 1.42695 0.564147 1.61525 0.697489 1.75724L4.93949 5.99999L0.696739 10.2427C0.625107 10.3119 0.56797 10.3947 0.528664 10.4862C0.489357 10.5777 0.468667 10.6761 0.467802 10.7757C0.466936 10.8753 0.485913 10.974 0.523623 11.0662C0.561334 11.1584 0.617024 11.2421 0.687443 11.3125C0.757863 11.383 0.841602 11.4386 0.933774 11.4764C1.02595 11.5141 1.12471 11.533 1.22429 11.5322C1.32387 11.5313 1.42229 11.5106 1.51379 11.4713C1.6053 11.432 1.68805 11.3749 1.75724 11.3032L5.99999 7.06049Z"/>
+      </svg>
+    </div>
+  </div>
+  <div class="m-list__profile__container">
+    <h2 class="m-list__profile__title mar_24">Qurilmalar</h2>
+    <div class="devices__container">
+      <p class="devices__container__title">Seanslar</p>
+      <ul class="devices__info__container">
+        <li class="devices__info__block">
+          <div class="devices__info">
+            <span class="devices__name">WebSite Chrome, Windows 10, Desktop</span>
+            <span class="devices__date">22-fev. 2024, 23:09</span>
+          </div>
+          <div class="devices__deactivation" (click)="deactivation = !deactivation">Yakunlash</div>
+        </li>
+        <li class="devices__info__block">
+          <div class="devices__info">
+            <span class="devices__name">WebSite Chrome, Windows 10, Desktop</span>
+            <span class="devices__date">22-fev. 2024, 23:09</span>
+          </div>
+          <div class="devices__deactivation" (click)="deactivation = !deactivation">Yakunlash</div>
+        </li>
+      </ul>
+      <div class="devices__deactivation dd_btn">Barchsini yakunlash</div>
+    </div>
+  </div>
+</div>
+<!--*ngIf=""-->
+<div class="m-list__profile" *ngIf="deactivation">
+  <div class="line">
+    <svg width="44" height="4" viewBox="0 0 44 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2 2H42" stroke="#3A3C40" stroke-width="4" stroke-linecap="round"/>
+    </svg>
+    <div class="close_icon_block" (click)="deactivation = !deactivation">
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="close_icon">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.99999 7.06049L10.2427 11.3032C10.3842 11.4399 10.5736 11.5155 10.7703 11.5137C10.9669 11.512 11.155 11.4332 11.2941 11.2941C11.4332 11.155 11.512 10.9669 11.5137 10.7703C11.5155 10.5736 11.4399 10.3842 11.3032 10.2427L7.06049 5.99999L11.3032 1.75724C11.4399 1.61579 11.5155 1.42634 11.5137 1.22969C11.512 1.03304 11.4332 0.844932 11.2941 0.705876C11.155 0.56682 10.9669 0.487943 10.7703 0.486234C10.5736 0.484526 10.3842 0.560121 10.2427 0.69674L5.99999 4.93949L1.75724 0.69674C1.61515 0.563499 1.4268 0.490764 1.23204 0.493927C1.03728 0.497089 0.851384 0.575901 0.713697 0.713685C0.57601 0.85147 0.497329 1.03742 0.494304 1.23218C0.49128 1.42695 0.564147 1.61525 0.697489 1.75724L4.93949 5.99999L0.696739 10.2427C0.625107 10.3119 0.56797 10.3947 0.528664 10.4862C0.489357 10.5777 0.468667 10.6761 0.467802 10.7757C0.466936 10.8753 0.485913 10.974 0.523623 11.0662C0.561334 11.1584 0.617024 11.2421 0.687443 11.3125C0.757863 11.383 0.841602 11.4386 0.933774 11.4764C1.02595 11.5141 1.12471 11.533 1.22429 11.5322C1.32387 11.5313 1.42229 11.5106 1.51379 11.4713C1.6053 11.432 1.68805 11.3749 1.75724 11.3032L5.99999 7.06049Z"/>
+      </svg>
+    </div>
+  </div>
+  <div class="m-list__profile__container">
+    <h2 class="m-list__profile__title mar_24">Rostdan ham ushbu “Desktop Chrome...” seansni chiqarib yubormoqchimisiz?</h2>
+    <div class="devices__info_deactivation">
+      <span class="devices__info__text">WebSite Chrome, Windows 10, Desktop</span>
+      <span class="d_color devices__info__text">22-fev. 2024, 23:09</span>
+    </div>
+    <div class="pay-item__btn_set addCard__flex">
+      <div class="pay-item__btn r_color">Chiqarib yuborish</div>
+      <div class="pay-item__btn" (click)="deactivation = !deactivation">Bekor qilish</div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!--Subscribe pages-->
+<div class="m-list__profile" *ngIf="sub">
+  <div class="container">
+    <div class="line">
+      <svg width="44" height="4" viewBox="0 0 44 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 2H42" stroke="#3A3C40" stroke-width="4" stroke-linecap="round"/>
+      </svg>
+      <div class="close_icon_block" (click)="sub = !sub">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="close_icon">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M5.99999 7.06049L10.2427 11.3032C10.3842 11.4399 10.5736 11.5155 10.7703 11.5137C10.9669 11.512 11.155 11.4332 11.2941 11.2941C11.4332 11.155 11.512 10.9669 11.5137 10.7703C11.5155 10.5736 11.4399 10.3842 11.3032 10.2427L7.06049 5.99999L11.3032 1.75724C11.4399 1.61579 11.5155 1.42634 11.5137 1.22969C11.512 1.03304 11.4332 0.844932 11.2941 0.705876C11.155 0.56682 10.9669 0.487943 10.7703 0.486234C10.5736 0.484526 10.3842 0.560121 10.2427 0.69674L5.99999 4.93949L1.75724 0.69674C1.61515 0.563499 1.4268 0.490764 1.23204 0.493927C1.03728 0.497089 0.851384 0.575901 0.713697 0.713685C0.57601 0.85147 0.497329 1.03742 0.494304 1.23218C0.49128 1.42695 0.564147 1.61525 0.697489 1.75724L4.93949 5.99999L0.696739 10.2427C0.625107 10.3119 0.56797 10.3947 0.528664 10.4862C0.489357 10.5777 0.468667 10.6761 0.467802 10.7757C0.466936 10.8753 0.485913 10.974 0.523623 11.0662C0.561334 11.1584 0.617024 11.2421 0.687443 11.3125C0.757863 11.383 0.841602 11.4386 0.933774 11.4764C1.02595 11.5141 1.12471 11.533 1.22429 11.5322C1.32387 11.5313 1.42229 11.5106 1.51379 11.4713C1.6053 11.432 1.68805 11.3749 1.75724 11.3032L5.99999 7.06049Z"/>
+        </svg>
+      </div>
+    </div>
+    <div class="m-list__profile__container">
+      <h2 class="m-list__profile__title mar_24">Qurilmalar</h2>
+      <div class="sub_container">
+        <div class="sub-b">
+          <div class="s-title-b">
+            <p class="s-title-text">Obuna 22</p>
+          </div>
+          <div class="s-body">
+            <p class="s-body-des">Filmlar, seriallar va boshqa ko‘p narsalarni cheklovlarsiz tomosha qiling. Yangilangan kontent bazasiga bitta obuna bilan ulaning</p>
+            <div class="s-body-text-block">
+              <div class="s-b-text-b-item">
+                <div class="s-b-t-title">
+                  <div class="s-b-t-img">
+                    <img src="/assets/check-g.png" alt="" class="">
+                  </div>
+                  <p class="s-b-title-b">5 tagacha profil</p>
+                </div>
+                <p class="s-b-body-text">Har bir oila a'zosi uchun profillarni alohida ochishingiz mumkin</p>
+              </div>
+              <div class="s-b-text-b-item">
+                <div class="s-b-t-title">
+                  <div class="s-b-t-img">
+                    <img src="/assets/check-g.png" alt="" class="">
+                  </div>
+                  <p class="s-b-title-b">Har qanday qurilmada</p>
+                </div>
+                <p class="s-b-body-text">Sevimli serial va filmlaringizni istalgan qurilmada tomosha qilishingiz mumkin</p>
+              </div>
+              <div class="s-b-text-b-item">
+                <div class="s-b-t-title">
+                  <div class="s-b-t-img">
+                    <img src="/assets/check-g.png" alt="" class="">
+                  </div>
+                  <p class="s-b-title-b">3 tagacha qurilma</p>
+                </div>
+                <p class="s-b-body-text">Siz bir vaqtning o'zida 3 ta qurilmada tomosha qilishingiz mumkin</p>
+              </div>
+            </div>
+            <div class="s-price-block">
+              <p class="s-p-title">Obuna narxi oyiga: </p>
+              <p class="s-p-body">21,890 so’m</p>
+            </div>
+            <div class="s-check mar-t">
+              <div class="s-check-b">
+                <input type="checkbox" class="s-check-b-item">
+              </div>
+              <p class="s-check-text">Shartnoma shartlariga roziman</p>
+            </div>
+            <div class="s-buy-btn bg-g">Obunani 21,890 so’mga sotib olish</div>
+          </div>
+        </div>
+        <div class="sub-b">
+          <div class="s-title-b">
+            <p class="s-title-text g-color">Konstruktor</p>
+          </div>
+          <div class="s-body">
+            <p class="s-body-des">Bu obuna paketi sizga aynan kerakli ko’rsatuv, film va seriallar uchun to’lovni amalga oshirishga hamda mablag’ingizni tejashga yordam beradi.</p>
+            <div class="s-container-check">
+              <div class="s-check">
+                <div class="s-check-b">
+                  <input type="checkbox" class="s-check-b-item">
+                </div>
+                <p class="s-check-text">Menga filmlar kerak</p>
+              </div>
+              <div class="s-check">
+                <div class="s-check-b">
+                  <input type="checkbox" class="s-check-b-item">
+                </div>
+                <p class="s-check-text">Menga seriallar kerak</p>
+              </div>
+              <div class="s-check">
+                <div class="s-check-b">
+                  <input type="checkbox" class="s-check-b-item">
+                </div>
+                <p class="s-check-text">Menga multfilmlar kerak</p>
+              </div>
+              <div class="s-check">
+                <div class="s-check-b">
+                  <input type="checkbox" class="s-check-b-item">
+                </div>
+                <p class="s-check-text">Menga ko'rsatuvlar kerak</p>
+              </div>
+              <div class="s-check">
+                <div class="s-check-b">
+                  <input type="checkbox" class="s-check-b-item">
+                </div>
+                <p class="s-check-text">"Obuna 22" paketi ichida</p>
+              </div>
+              <div class="s-check">
+                <div class="s-check-b">
+                  <input type="checkbox" class="s-check-b-item">
+                </div>
+                <p class="s-check-text">"Setanta Sports” paketi ichida</p>
+              </div>
+            </div>
+            <div class="s-price-block">
+              <p class="s-p-title">Obuna narxi oyiga: </p>
+              <p class="s-p-body">9,991 so’m</p>
+            </div>
+            <div class="s-check mar-t">
+              <div class="s-check-b">
+                <input type="checkbox" class="s-check-b-item">
+              </div>
+              <p class="s-check-text">Shartnoma shartlariga roziman</p>
+            </div>
+            <div class="s-buy-btn bg-g">Obunani 9,991 so’mga sotib olish</div>
+          </div>
+        </div>
+        <div class="sub-b">
+          <div class="s-title-b">
+            <p class="s-title-text">Setanta Sports</p>
+          </div>
+          <div class="s-body">
+            <p class="s-body-des">Setanta Sports butun dunyodagi eng yirik futbol ligalari va eng mashhur sport musobaqalarini jonli yoritishni ta’minlaydi</p>
+            <div class="s-body-text-block">
+              <div class="s-b-text-b-item">
+                <div class="s-b-t-title">
+                  <div class="s-b-t-img">
+                    <img src="/assets/check-g.png" alt="" class="">
+                  </div>
+                  <p class="s-b-title-b">5 tagacha profil</p>
+                </div>
+                <p class="s-b-body-text">Har bir oila a'zosi uchun profillarni alohida ochishingiz mumkin</p>
+              </div>
+              <div class="s-b-text-b-item">
+                <div class="s-b-t-title">
+                  <div class="s-b-t-img">
+                    <img src="/assets/check-g.png" alt="" class="">
+                  </div>
+                  <p class="s-b-title-b">Har qanday qurilmada</p>
+                </div>
+                <p class="s-b-body-text">Sevimli serial va filmlaringizni istalgan qurilmada tomosha qilishingiz mumkin</p>
+              </div>
+              <div class="s-b-text-b-item">
+                <div class="s-b-t-title">
+                  <div class="s-b-t-img">
+                    <img src="/assets/check-g.png" alt="" class="">
+                  </div>
+                  <p class="s-b-title-b">3 tagacha qurilma</p>
+                </div>
+                <p class="s-b-body-text">Siz bir vaqtning o'zida 3 ta qurilmada tomosha qilishingiz mumkin</p>
+              </div>
+            </div>
+            <div class="s-price-block">
+              <p class="s-p-title">Obuna narxi oyiga: </p>
+              <p class="s-p-body">12,980 so’m</p>
+            </div>
+            <div class="s-check mar-t">
+              <div class="s-check-b">
+                <input type="checkbox" class="s-check-b-item">
+              </div>
+              <p class="s-check-text">Shartnoma shartlariga roziman</p>
+            </div>
+            <div class="s-buy-btn bg-g">Obunani 21,890 so’mga sotib olish</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
